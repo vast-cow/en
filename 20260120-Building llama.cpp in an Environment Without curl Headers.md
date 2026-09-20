@@ -1,6 +1,6 @@
 ---
 title: "Building llama.cpp in an Environment Without curl Headers"
-description: "When you try to build llama.cpp on a system where the curl development headers are not installed, the..."
+description: "Supply CMake with headers from matching curl source and the installed libcurl shared library to compile llama.cpp without installing curl development packages."
 pubDatetime: 2026-01-20T02:57:25.423Z
 ---
 

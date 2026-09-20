@@ -1,6 +1,6 @@
 ---
 title: "Docker Wrapper Command for Interactive, Host-Networked Runs with Local Home and Working Directory Mounts"
-description: "Interactive and ephemeral execution: Runs an interactive container (-it) and automatically removes..."
+description: "Run disposable interactive Docker containers with host networking, home-directory mounts, the current working directory, and forwarded command arguments."
 pubDatetime: 2026-01-19T11:26:51.815Z
 ---
 

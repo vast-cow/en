@@ -1,6 +1,6 @@
 ---
 title: "Restoring Hidden Playback Buttons in YouTube Music"
-description: "Overview   This user script is designed to fix an issue in YouTube Music where certain..."
+description: "Restore YouTube Music's hidden rewind and forward controls with a userscript that watches control-area changes and throttles visibility updates."
 pubDatetime: 2026-04-27T08:54:58.897Z
 updatedDate: 2026-06-10T02:57:31.012Z
 ---

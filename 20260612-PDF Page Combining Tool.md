@@ -1,6 +1,6 @@
 ---
 title: "PDF Page Combining Tool"
-description: "Overview   This tool combines multiple pages from a PDF into a grid layout on each output..."
+description: "Combine selected PDF pages into configurable grids with a Python script that supports page ranges, margins, gaps, and either enlarged sheets or scaled pages."
 pubDatetime: 2026-06-12T07:15:53.337Z
 ---
 

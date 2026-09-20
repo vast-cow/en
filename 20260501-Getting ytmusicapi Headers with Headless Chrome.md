@@ -1,6 +1,6 @@
 ---
 title: "Getting ytmusicapi Headers with Headless Chrome"
-description: "This script collects the request information needed to use ytmusicapi with YouTube Music. It connects..."
+description: "Attach Playwright to an existing authenticated Chrome or Edge session, capture YouTube Music browse-request headers, and save matching requests as JSON for ytmusicapi setup."
 pubDatetime: 2026-05-01T13:50:32.748Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "How to Separate CUDA-Specific Code from Regular C++ Code"
-description: "In a CUDA application, you can place GPU kernels and device memory-related code in .cu files while..."
+description: "Keep CUDA kernels in .cu files while using runtime APIs from standard C++ to access constant memory, launch kernels, and verify results after linking with nvcc."
 pubDatetime: 2026-07-16T11:06:32.591Z
 updatedDate: 2026-07-16T11:34:54.682Z
 ---

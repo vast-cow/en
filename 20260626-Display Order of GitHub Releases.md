@@ -1,6 +1,6 @@
 ---
 title: "Display Order of GitHub Releases"
-description: "Conclusion   The display order of GitHub Releases is not based on the release title, not..."
+description: "Examine how latest-release selection, semantic versions, and commit dates affect GitHub releases, and sort API results explicitly for predictable ordering."
 pubDatetime: 2026-06-26T12:22:25.815Z
 ---
 

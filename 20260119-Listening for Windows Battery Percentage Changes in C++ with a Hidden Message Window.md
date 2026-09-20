@@ -1,6 +1,6 @@
 ---
 title: "Listening for Windows Battery Percentage Changes in C++ with a Hidden Message Window"
-description: "This program demonstrates a straightforward way to listen for battery percentage updates on Windows..."
+description: "A C++ example registers a message-only window for battery notifications, decodes power broadcasts, and releases notification handles when the message loop ends."
 pubDatetime: 2026-01-19T08:28:26.802Z
 ---
 

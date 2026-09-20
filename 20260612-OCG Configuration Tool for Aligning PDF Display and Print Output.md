@@ -1,6 +1,6 @@
 ---
 title: "OCG Configuration Tool for Aligning PDF Display and Print Output"
-description: "The content of a PDF can sometimes differ between what you see on screen and what gets printed.  One..."
+description: "Use PyMuPDF to align PDF layer visibility for printing, viewing, and exporting with the saved configuration, with listing and dry-run options."
 pubDatetime: 2026-06-12T08:28:40.352Z
 updatedDate: 2026-06-12T08:33:02.911Z
 ---

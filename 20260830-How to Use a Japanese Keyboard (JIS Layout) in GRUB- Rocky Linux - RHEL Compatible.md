@@ -1,6 +1,6 @@
 ---
 title: "How to Use a Japanese Keyboard (JIS Layout) in GRUB: Rocky Linux / RHEL Compatible"
-description: "How to Use a Japanese Keyboard (JIS Layout) in GRUB: Rocky Linux / RHEL Compatible   When..."
+description: "Generate and test a Japanese GRUB keymap, make it persistent through custom boot configuration, and distinguish it from Linux console settings."
 pubDatetime: 2026-08-30T07:46:21.679Z
 ---
 

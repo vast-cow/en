@@ -1,6 +1,6 @@
 ---
 title: "Recreating a bcache Backing Device with a New Block Size (Cache Device Not Used)"
-description: "This article describes how to change the bcache block size when you are operating without a cache..."
+description: "Recreate bcache backing metadata with a different block size while reusing the recorded data offset, covering shutdown order, verification, and data-loss risks."
 pubDatetime: 2026-01-19T11:27:01.086Z
 ---
 

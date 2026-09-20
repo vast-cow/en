@@ -1,6 +1,6 @@
 ---
 title: "Workaround for using UAS USB3 storage on Linux"
-description: "Some USB-to-SATA/NVMe bridge chips advertise UAS (USB Attached SCSI) but behave poorly under the uas..."
+description: "Identify problematic USB storage bridges and apply temporary or persistent quirks to disable UAS or limit transfer sizes, including multiple-device settings and initramfs updates."
 pubDatetime: 2026-01-20T01:53:13.029Z
 updatedDate: 2026-01-20T02:11:12.527Z
 ---

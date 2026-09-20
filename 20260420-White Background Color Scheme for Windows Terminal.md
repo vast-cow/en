@@ -1,6 +1,6 @@
 ---
 title: "White Background Color Scheme for Windows Terminal"
-description: "Overview   Windows Terminal allows you to customize its appearance through color schemes,..."
+description: "Define a light terminal palette with dark foreground, cursor, and selection colors, then add it to Windows Terminal's JSON settings and assign it to a profile."
 pubDatetime: 2026-04-20T09:22:01.109Z
 ---
 

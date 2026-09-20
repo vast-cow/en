@@ -1,6 +1,6 @@
 ---
 title: "Notes on Tabby: Llama.cpp, Model Caching, and Access Tokens"
-description: "Tabby is a developer-focused tool that can run and manage local AI models, and it includes a few..."
+description: "Notes on Tabby's local inference backend, configurable model cache directory, model registry, and browser-based account setup for obtaining an access token."
 pubDatetime: 2026-01-20T02:51:21.500Z
 ---
 

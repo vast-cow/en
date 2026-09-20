@@ -1,6 +1,6 @@
 ---
 title: "Building llama.cpp with CUDA in an NVIDIA HPC SDK Environment"
-description: "If you are working in an NVIDIA HPC SDK environment and want to build llama.cpp with CUDA support,..."
+description: "Configure CMake to enable the CUDA backend while selecting GCC/G++ for host code and NVCC for GPU code to avoid compiler-flag incompatibilities."
 pubDatetime: 2026-01-20T03:03:14.797Z
 ---
 

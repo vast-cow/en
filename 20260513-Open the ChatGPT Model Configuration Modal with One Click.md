@@ -1,6 +1,6 @@
 ---
 title: "Open the ChatGPT Model Configuration Modal with One Click"
-description: "This userscript automatically clicks specific elements related to the ChatGPT model configuration..."
+description: "Use a Tampermonkey script and DOM observer to automatically open ChatGPT's model settings when the configuration button appears."
 pubDatetime: 2026-05-13T04:04:24.247Z
 updatedDate: 2026-05-13T09:06:03.199Z
 ---

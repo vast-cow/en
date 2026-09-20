@@ -1,6 +1,6 @@
 ---
 title: "Preventing `pip install` Outside of Virtual Environments (Enforcing venv Usage)"
-description: "In Python development, one of the most common and costly mistakes is accidentally running pip install..."
+description: "Require a virtual environment through pip configuration or environment variables, with temporary overrides and an explanation of why shell wrappers alone are insufficient."
 pubDatetime: 2026-01-19T08:34:35.586Z
 ---
 

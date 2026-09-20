@@ -1,6 +1,6 @@
 ---
 title: "When did WSL's --import add support for xz and zstd?"
-description: "The conclusion is: I could not find an official release note that says \"supported from this version..."
+description: "Trace public reports of xz and zstd archive imports in WSL, distinguishing verified working versions from undocumented introduction dates."
 pubDatetime: 2026-06-18T07:50:42.832Z
 updatedDate: 2026-06-18T08:13:49.579Z
 ---

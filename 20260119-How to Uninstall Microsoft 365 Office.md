@@ -1,6 +1,6 @@
 ---
 title: "How to Uninstall Microsoft 365 Office"
-description: "Office provided through Microsoft 365 (organizational accounts) is subject to an installation limit..."
+description: "Sign out an old PC through the Microsoft 365 organizational account portal before uninstalling Office, with online deactivation also available for inaccessible devices."
 pubDatetime: 2026-01-19T10:21:34.988Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Using pip with Windows Python Embeddable"
-description: "The Windows Python embeddable distribution (python-3.x.x-embed-amd64.zip) is a lightweight,..."
+description: "Bootstrap pip in the Windows embeddable Python runtime, adjust module search paths, and use virtualenv for isolation, with troubleshooting for imports and certificates."
 pubDatetime: 2026-02-12T11:52:17.837Z
 ---
 

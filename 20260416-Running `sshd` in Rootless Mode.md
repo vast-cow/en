@@ -1,6 +1,6 @@
 ---
 title: "Running `sshd` in Rootless Mode"
-description: "This article explains how to run sshd as a normal user without root privileges. The setup uses a..."
+description: "Create a user-owned SSH server configuration and host key, restrict access to public-key authentication for the current user, and run foreground SSH/SFTP on a high port."
 pubDatetime: 2026-04-16T05:36:51.738Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Settings to Save a Longer bash History, Reduce Duplicates, and Make It Easier to Use Across Multiple Terminals"
-description: "If you use bash regularly, you often want to find commands you ran earlier. With the default..."
+description: "Configure larger Bash history files and prompt hooks to share commands across terminals, reduce duplicates, and search previous commands efficiently."
 pubDatetime: 2026-06-18T08:55:33.669Z
 updatedDate: 2026-06-26T05:45:36.310Z
 ---

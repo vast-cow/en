@@ -1,6 +1,6 @@
 ---
 title: "Changing Author Information in Git History with `git filter-repo`"
-description: "Sometimes, you may need to update the author or committer information in your Git repository history...."
+description: "Rewrite author and committer names and email addresses across Git history, with installation steps and guidance on backups, changed commit IDs, and collaborator coordination."
 pubDatetime: 2026-01-19T15:28:22.616Z
 updatedDate: 2026-01-23T13:22:12.450Z
 ---

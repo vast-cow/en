@@ -1,6 +1,6 @@
 ---
 title: "Generate Reverse DNS (PTR) Names from IP Addresses via Python CLI"
-description: "Accepts one or more IP addresses as command-line arguments (sys.argv[1:]). Uses..."
+description: "A short Python script converts one or more IPv4 or IPv6 command-line arguments into the corresponding reverse DNS query names using the standard ipaddress module."
 pubDatetime: 2026-01-19T11:14:17.234Z
 ---
 

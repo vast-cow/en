@@ -1,6 +1,6 @@
 ---
 title: "Toggle Windows Light and Dark Mode with Python"
-description: "Note: I also created a version that changes the color schemes of VS Code, Windows Terminal and..."
+description: "Read and update Windows app and system theme registry values from Python, then broadcast a settings-change message to apply a light/dark toggle."
 pubDatetime: 2026-04-22T13:05:27.123Z
 updatedDate: 2026-06-03T08:39:57.439Z
 ---

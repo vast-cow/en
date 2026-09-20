@@ -1,6 +1,6 @@
 ---
 title: "How to Disable Network Connectivity During Modern Standby in Windows 11"
-description: "In Windows 11, Modern Standby (S0 Low Power Idle) may keep the network connected during sleep to..."
+description: "Configure plugged-in and battery Group Policy settings to reduce network activity during S0 sleep, verify Modern Standby support, and account for hardware-dependent behavior."
 pubDatetime: 2026-02-14T08:35:22.345Z
 ---
 

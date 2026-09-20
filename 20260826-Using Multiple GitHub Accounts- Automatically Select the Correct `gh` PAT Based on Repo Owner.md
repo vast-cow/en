@@ -1,6 +1,6 @@
 ---
 title: "Using Multiple GitHub Accounts: Automatically Select the Correct `gh` PAT Based on Repo Owner"
-description: "When using multiple GitHub accounts, the process of selecting the correct Personal Access Token (PAT)..."
+description: "Route Git HTTPS credentials to stored GitHub CLI accounts using repository paths, with organization mappings, repository-specific overrides, and Gist handling."
 pubDatetime: 2026-08-26T07:16:37.440Z
 ---
 

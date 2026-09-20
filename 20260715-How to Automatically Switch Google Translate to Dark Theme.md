@@ -1,6 +1,6 @@
 ---
 title: "How to Automatically Switch Google Translate to Dark Theme"
-description: "If you use Google Translate for long periods, the bright interface can become uncomfortable to look..."
+description: "Apply a custom Google Translate theme that follows system dark mode, styles dynamic interface elements, and restores the default appearance in light mode."
 pubDatetime: 2026-07-15T12:18:40.996Z
 ---
 

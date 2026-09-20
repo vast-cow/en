@@ -1,6 +1,6 @@
 ---
 title: "Registering the Legacy Windows Photo Viewer for Picture Files"
-description: "Windows Photo Viewer is the classic image viewer that was used in earlier versions of Windows. Some..."
+description: "Add per-user registry entries that expose the existing Windows Photo Viewer in Open with, including image-opening and printing commands."
 pubDatetime: 2026-06-24T05:59:54.488Z
 ---
 

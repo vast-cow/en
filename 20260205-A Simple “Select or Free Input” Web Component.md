@@ -1,6 +1,6 @@
 ---
 title: "A Simple “Select or Free Input” Web Component"
-description: "Overview   This HTML page demonstrates a small user interface pattern that lets people..."
+description: "Combine a dropdown and free-text input around one shared value, preserving custom entries when switching modes and synchronizing the displayed selection on blur."
 pubDatetime: 2026-02-05T13:12:08.073Z
 ---
 

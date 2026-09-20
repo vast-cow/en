@@ -1,6 +1,6 @@
 ---
 title: "Macro to Create Text with an Outline Color Different from the Text Color in PowerPoint"
-description: "In PowerPoint, you may want to add an outline in a different color while preserving the original text..."
+description: "Create outlined text in PowerPoint with a VBA macro that duplicates a selected text box, derives the outline color from its background, and groups the layers."
 pubDatetime: 2026-06-02T12:57:43.176Z
 ---
 

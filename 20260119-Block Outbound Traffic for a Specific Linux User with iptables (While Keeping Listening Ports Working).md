@@ -1,6 +1,6 @@
 ---
 title: "Block Outbound Traffic for a Specific Linux User with iptables (While Keeping Listening Ports Working)"
-description: "In some environments you may want to prevent a particular local user from initiating outbound network..."
+description: "Use owner and connection-state rules for IPv4 and IPv6 to restrict a user's new outbound connections while permitting loopback traffic and replies from listening services."
 pubDatetime: 2026-01-19T10:18:34.994Z
 ---
 

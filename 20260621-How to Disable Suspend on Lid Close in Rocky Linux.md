@@ -1,6 +1,6 @@
 ---
 title: "How to Disable Suspend on Lid Close in Rocky Linux"
-description: "In Rocky Linux, lid-close handling is generally managed by systemd-logind, even when using..."
+description: "Configure systemd-logind to ignore laptop lid events on Rocky Linux, verify the settings, and troubleshoot desktop power handlers or suspend targets."
 pubDatetime: 2026-06-21T06:51:22.992Z
 ---
 

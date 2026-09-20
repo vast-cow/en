@@ -1,6 +1,6 @@
 ---
 title: "How to reliably open YouTube links in the YouTube app using an iOS Shortcut"
-description: "When you open a YouTube URL copied from Safari or other apps as-is, it may play in a browser or..."
+description: "Build an iOS Shortcut that reads clipboard URLs, distinguishes Shorts from standard videos, extracts video IDs, and opens the YouTube app through its custom URL scheme."
 pubDatetime: 2026-01-19T13:39:16.935Z
 ---
 

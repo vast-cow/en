@@ -1,6 +1,6 @@
 ---
 title: "Procedure for Modifying a SquashFS-Based Live Linux System"
-description: "A Live Linux system such as SystemRescue generally has the following structure:    ISO9660 ├── EFI/,..."
+description: "Customize live Linux images through SystemRescue configuration, overlays, or SquashFS rebuilding while preserving metadata, boot compatibility, and kernel consistency."
 pubDatetime: 2026-07-28T06:53:42.170Z
 ---
 

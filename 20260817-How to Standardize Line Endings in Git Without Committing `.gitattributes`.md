@@ -1,6 +1,6 @@
 ---
 title: "How to Standardize Line Endings in Git Without Committing `.gitattributes`"
-description: "When developing with Git, differences between CRLF and LF can become an issue when working across..."
+description: "Apply personal Git line-ending rules through repository-local attributes or a global attributes file, using LF for text and CRLF for Windows batch files."
 pubDatetime: 2026-08-17T06:02:23.416Z
 ---
 

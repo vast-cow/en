@@ -1,6 +1,6 @@
 ---
 title: "Make a CLI command from your Python package"
-description: "In short: declare a console_scripts entry point in your package metadata, activate the target virtual..."
+description: "Expose a Python function as an installed command through package entry points, with pyproject.toml and setup.cfg examples, editable installs, and virtual-environment verification."
 pubDatetime: 2026-01-20T02:16:56.274Z
 updatedDate: 2026-01-21T09:29:48.461Z
 ---

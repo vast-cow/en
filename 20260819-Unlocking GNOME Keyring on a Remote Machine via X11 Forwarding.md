@@ -1,6 +1,6 @@
 ---
 title: "Unlocking GNOME Keyring on a Remote Machine via X11 Forwarding"
-description: "A memo on unlocking the GNOME Keyring on a Linux server connected via SSH, using Seahorse through X11..."
+description: "Forward remote keyring prompts over SSH by updating the D-Bus display environment, unlock through Seahorse or secret-tool, and select the GCR SSH agent."
 pubDatetime: 2026-08-19T09:42:29.761Z
 updatedDate: 2026-08-19T10:54:07.822Z
 ---

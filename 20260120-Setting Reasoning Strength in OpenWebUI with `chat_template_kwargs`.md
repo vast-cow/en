@@ -1,6 +1,6 @@
 ---
 title: "Setting Reasoning Strength in OpenWebUI with `chat_template_kwargs`"
-description: "When you run a model through llama.cpp and access it from OpenWebUI using an OpenAI-compatible API,..."
+description: "Pass reasoning_effort through an OpenWebUI custom model parameter to a llama.cpp chat template, with examples of low, medium, and high settings and their tradeoffs."
 pubDatetime: 2026-01-20T02:50:16.813Z
 ---
 

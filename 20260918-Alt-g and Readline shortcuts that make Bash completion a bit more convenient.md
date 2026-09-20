@@ -1,6 +1,6 @@
 ---
 title: "Alt-g and Readline shortcuts that make Bash completion a bit more convenient"
-description: "Let's say you're using Bash and you have a directory like this:    $ ls aaa-bbb-ccc        Enter..."
+description: "Use glob completion and expansion to find partial filenames, reuse prior arguments, search history, and edit long commands with Bash Readline shortcuts."
 pubDatetime: 2026-09-18T11:05:17.941Z
 ---
 

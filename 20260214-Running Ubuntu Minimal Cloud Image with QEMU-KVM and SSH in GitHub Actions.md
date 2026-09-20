@@ -1,6 +1,6 @@
 ---
 title: "Running Ubuntu Minimal Cloud Image with QEMU-KVM and SSH in GitHub Actions"
-description: "This article explains a GitHub Actions workflow named qemu-kvm-ubuntu-minimal-cloudimg-ssh. The..."
+description: "Provision an Ubuntu cloud VM in GitHub Actions using KVM, a cached base image, cloud-init, and an overlay disk, then verify SSH readiness and collect logs during cleanup."
 pubDatetime: 2026-02-14T13:52:02.437Z
 updatedDate: 2026-02-14T13:52:43.020Z
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Automatic DDNS Updates with No-IP and systemd"
-description: "Keeping a home or small-office service reachable from the internet can be challenging when your ISP..."
+description: "A Python user service checks the router's public IP through UPnP and updates No-IP when it changes, with persistent state, backups, and journal logging."
 pubDatetime: 2026-01-19T14:46:00.254Z
 ---
 

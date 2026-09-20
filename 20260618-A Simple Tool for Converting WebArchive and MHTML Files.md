@@ -1,6 +1,6 @@
 ---
 title: "A Simple Tool for Converting WebArchive and MHTML Files"
-description: "Purpose   This tool converts files between Apple .webarchive format and MHTML/MHT..."
+description: "Convert between Safari WebArchive and MHTML with a standard-library Python tool that handles embedded resources, content IDs, encodings, and CSS compatibility."
 pubDatetime: 2026-06-18T04:43:25.780Z
 ---
 

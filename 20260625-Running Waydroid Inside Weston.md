@@ -1,6 +1,6 @@
 ---
 title: "Running Waydroid Inside Weston"
-description: "Waydroid can be started inside a Weston session by launching Weston with the Wayland backend,..."
+description: "Launch Android in a nested Weston kiosk session by selecting its Wayland display, then shut down Android and stop the Waydroid session cleanly."
 pubDatetime: 2026-06-25T09:59:21.422Z
 ---
 

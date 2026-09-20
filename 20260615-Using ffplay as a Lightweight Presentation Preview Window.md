@@ -1,6 +1,6 @@
 ---
 title: "Using ffplay as a Lightweight Presentation Preview Window"
-description: "When giving a presentation over Zoom or a similar video conferencing tool, it is often useful to show..."
+description: "Preview a Windows secondary or virtual display in an ffplay window using Desktop Duplication capture and low-latency settings for screen sharing."
 pubDatetime: 2026-06-15T07:33:58.866Z
 ---
 

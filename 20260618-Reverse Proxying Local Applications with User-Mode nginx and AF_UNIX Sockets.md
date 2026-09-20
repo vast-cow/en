@@ -1,6 +1,6 @@
 ---
 title: "Reverse Proxying Local Applications with User-Mode nginx and AF_UNIX Sockets"
-description: "When running multiple local web applications, it is often useful to route requests to different..."
+description: "Run an unprivileged Nginx instance that proxies path prefixes to Unix sockets, supports WebSockets and SSE, and keeps runtime files in user-owned directories."
 pubDatetime: 2026-06-18T07:11:45.067Z
 updatedDate: 2026-07-28T10:58:59.834Z
 ---

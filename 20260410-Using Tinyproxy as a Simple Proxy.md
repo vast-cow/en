@@ -1,6 +1,6 @@
 ---
 title: "Using Tinyproxy as a Simple Proxy"
-description: "This article focuses strictly on setting up and using Tinyproxy—a lightweight HTTP/HTTPS proxy—on..."
+description: "Install and configure an Alpine HTTP proxy, run it in the foreground or through OpenRC, and route curl, environment-based clients, or SSH connections through it."
 pubDatetime: 2026-04-10T07:23:26.713Z
 updatedDate: 2026-04-10T07:36:13.895Z
 ---

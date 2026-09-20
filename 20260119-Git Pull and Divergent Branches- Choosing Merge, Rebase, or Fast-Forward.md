@@ -1,6 +1,6 @@
 ---
 title: "Git Pull and Divergent Branches: Choosing Merge, Rebase, or Fast-Forward"
-description: "If you’ve recently run:    git pull        Enter fullscreen mode            Exit fullscreen mode    ..."
+description: "Understand divergent Git histories and compare merge, rebase, and fast-forward pulls, including configuration defaults, one-time overrides, and tradeoffs for shared branches."
 pubDatetime: 2026-01-19T09:53:29.876Z
 ---
 

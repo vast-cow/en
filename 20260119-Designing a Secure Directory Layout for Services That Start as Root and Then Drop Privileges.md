@@ -1,6 +1,6 @@
 ---
 title: "Designing a Secure Directory Layout for Services That Start as Root and Then Drop Privileges"
-description: "Services that start as root, perform a small set of privileged operations, and then drop privileges..."
+description: "Separate root-owned configuration and code from writable service state using FHS directories, restrictive permissions, and systemd filesystem controls after dropping privileges."
 pubDatetime: 2026-01-19T11:12:07.163Z
 ---
 

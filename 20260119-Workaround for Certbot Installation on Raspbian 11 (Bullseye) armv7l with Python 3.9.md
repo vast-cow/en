@@ -1,6 +1,6 @@
 ---
 title: "Workaround for Certbot Installation on Raspbian 11 (Bullseye) armv7l with Python 3.9"
-description: "Pin Dependencies to Avoid pip Install Failures   On Raspbian 11 (Bullseye) running on..."
+description: "Resolve Certbot dependency failures on ARMv7 Python 3.9 by constraining cffi below 2.0 or installing libffi development files to build a newer release."
 pubDatetime: 2026-01-19T09:47:23.419Z
 ---
 

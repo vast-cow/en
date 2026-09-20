@@ -1,6 +1,6 @@
 ---
 title: "Configuring hostapd on a MacBookPro14,2 with Ubuntu 24.04"
-description: "This is a somewhat specialized use case, but this article documents how to use a MacBook Pro as a..."
+description: "Configure the MacBook Pro's Broadcom adapter as a bridged 5 GHz WPA2 access point, documenting working HT40 settings and channel-width troubleshooting."
 pubDatetime: 2026-07-28T12:17:39.041Z
 updatedDate: 2026-09-08T01:41:30.073Z
 ---

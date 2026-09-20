@@ -1,6 +1,6 @@
 ---
 title: "Setting Up and Troubleshooting FFmpeg + Intel QSV on Rocky Linux 9"
-description: "If you want to accelerate FFmpeg H.264 / HEVC encoding using the integrated GPU in an Intel CPU, you..."
+description: "Diagnose Intel QSV encoding failures from GPU and render-node access through VA-API drivers and runtime compatibility before testing FFmpeg encoding."
 pubDatetime: 2026-08-07T08:31:28.851Z
 ---
 

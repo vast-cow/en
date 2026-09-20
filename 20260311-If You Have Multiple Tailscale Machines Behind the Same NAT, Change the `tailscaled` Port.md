@@ -1,6 +1,6 @@
 ---
 title: "If You Have Multiple Tailscale Machines Behind the Same NAT, Change the `tailscaled` Port"
-description: "When you run multiple Tailscale nodes at the same site, you may notice that only one machine..."
+description: "Assign distinct UDP ports to Tailscale hosts sharing a NAT, restart their daemons, and check firewall access and peer connectivity when nodes fall back to relays."
 pubDatetime: 2026-03-11T09:57:10.384Z
 ---
 

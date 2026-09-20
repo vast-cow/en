@@ -1,6 +1,6 @@
 ---
 title: "How to Build NCCL Tests in an NVIDIA HPC SDK Environment"
-description: "To build nccl-tests in an NVIDIA HPC SDK environment, you need to set the correct paths for CUDA,..."
+description: "Point the nccl-tests build at the SDK's CUDA, NCCL, and associated HPC-X Open MPI directories, then enable MPI support through explicit make variables."
 pubDatetime: 2026-04-14T08:23:44.992Z
 ---
 

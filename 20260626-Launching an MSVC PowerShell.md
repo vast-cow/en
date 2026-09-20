@@ -1,6 +1,6 @@
 ---
 title: "Launching an MSVC PowerShell"
-description: "This example shows how to start a PowerShell session that is already configured for the Microsoft..."
+description: "Find an installed Visual Studio or Build Tools environment with vswhere and initialize Developer PowerShell with configurable host and target architectures."
 pubDatetime: 2026-06-26T03:07:53.090Z
 updatedDate: 2026-06-26T11:35:44.418Z
 ---

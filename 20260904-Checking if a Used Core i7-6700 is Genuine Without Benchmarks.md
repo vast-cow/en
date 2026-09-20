@@ -1,6 +1,6 @@
 ---
 title: "Checking if a Used Core i7-6700 is Genuine Without Benchmarks"
-description: "When purchasing a used Intel CPU, you might wonder if the heat spreader has been swapped with another..."
+description: "Cross-check Intel CPU markings, Data Matrix serials, and processor identification, while recognizing the limits of proving a heat spreader and substrate belong together."
 pubDatetime: 2026-09-04T04:07:06.484Z
 updatedDate: 2026-09-04T04:13:02.754Z
 ---

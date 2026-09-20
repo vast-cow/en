@@ -1,6 +1,6 @@
 ---
 title: "Switch Windows, Windows Terminal, and VS Code Themes All at Once"
-description: "The following Python script is a CLI tool that explicitly switches Windows between light and dark..."
+description: "Switch Windows, Windows Terminal, and VS Code between configured light and dark appearances with a Python command that also sets a solid desktop background."
 pubDatetime: 2026-06-03T06:28:06.032Z
 updatedDate: 2026-08-17T06:25:47.632Z
 ---

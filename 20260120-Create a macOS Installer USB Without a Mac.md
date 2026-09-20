@@ -1,6 +1,6 @@
 ---
 title: "Create a macOS Installer USB Without a Mac"
-description: "If you don’t have access to a Mac, you can still prepare a bootable macOS installer USB from Linux or..."
+description: "Download an Apple recovery image with macrecovery.py, convert it with dmg2img, and write it to USB from Linux or Windows, with boot and imaging troubleshooting notes."
 pubDatetime: 2026-01-20T02:18:49.507Z
 ---
 

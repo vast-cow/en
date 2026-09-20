@@ -1,6 +1,6 @@
 ---
 title: "Automating TLS Certificate Renewal with systemd and `acme.sh`"
-description: "How the Setup Works   This configuration renews TLS certificates automatically using a..."
+description: "Schedule ACME webroot validation with systemd, temporarily forward port 80 through UPnP, and deploy renewed certificates to Nginx and StrongSwan."
 pubDatetime: 2026-01-19T10:12:31.719Z
 ---
 

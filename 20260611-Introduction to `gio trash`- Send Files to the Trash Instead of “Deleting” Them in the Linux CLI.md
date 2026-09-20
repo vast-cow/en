@@ -1,6 +1,6 @@
 ---
 title: "Introduction to `gio trash`: Send Files to the Trash Instead of “Deleting” Them in the Linux CLI"
-description: "When deleting files from the Linux command line, many people instinctively use rm. However, rm..."
+description: "Move files and directories to the desktop trash from the command line, list and restore entries, and understand filesystem and permission limitations."
 pubDatetime: 2026-06-11T11:31:24.786Z
 ---
 

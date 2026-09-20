@@ -1,6 +1,6 @@
 ---
 title: "Getting Fill-In-the-Middle Autocomplete Working in VS Code Continue with llama.cpp"
-description: "Overview   Continue is a popular AI coding extension for Visual Studio Code. One of its most..."
+description: "Assign a dedicated autocomplete model to llama-server in Continue's YAML configuration, tune suggestion latency, and keep chat endpoints separate when troubleshooting FIM completion."
 pubDatetime: 2026-01-20T02:55:41.180Z
 ---
 

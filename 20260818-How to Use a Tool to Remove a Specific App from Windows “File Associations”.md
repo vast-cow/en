@@ -1,6 +1,6 @@
 ---
 title: "How to Use a Tool to Remove a Specific App from Windows “File Associations”"
-description: "On Windows, uninstalled applications or portable applications can sometimes leave behind only their..."
+description: "Find obsolete Windows file-association keys by executable name with a Python tool, preview matches, and understand the scope of recursive registry deletion."
 pubDatetime: 2026-08-18T08:41:19.711Z
 ---
 

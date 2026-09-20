@@ -1,6 +1,6 @@
 ---
 title: "Rewriting Remote Git History with `reset` and `push --force-with-lease`"
-description: "Sometimes a commit is pushed to a remote repository by mistake, and the goal is to move the remote..."
+description: "Move a remote branch to an earlier commit using a hard reset and a lease-checked force push, with examples for removing recent commits and coordinating shared history."
 pubDatetime: 2026-01-19T07:48:23.141Z
 updatedDate: 2026-09-20T09:55:17.238Z
 ---

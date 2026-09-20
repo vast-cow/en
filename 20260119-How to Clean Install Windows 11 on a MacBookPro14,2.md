@@ -1,6 +1,6 @@
 ---
 title: "How to Clean Install Windows 11 on a MacBookPro14,2"
-description: "This article explains the steps required to perform a clean installation of Windows 11 on a..."
+description: "Prepare Boot Camp drivers, preserve the EFI partition's APPLE directory for Touch Bar support, install Windows, and finish by installing the saved hardware drivers."
 pubDatetime: 2026-01-19T11:26:42.074Z
 ---
 

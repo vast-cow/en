@@ -1,6 +1,6 @@
 ---
 title: "How to Use NetworkManager's Checkpoint Feature (nmcli device checkpoint)"
-description: "nmcli device checkpoint is a feature that allows you to create a \"restore point\" for safely testing..."
+description: "Explain checkpoint-based network rollback, timeout behavior, and verification when testing remote IP, routing, bridge, or VLAN changes through NetworkManager."
 pubDatetime: 2026-09-16T04:15:12.719Z
 ---
 

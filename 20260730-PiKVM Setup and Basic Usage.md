@@ -1,6 +1,6 @@
 ---
 title: "PiKVM Setup and Basic Usage"
-description: "PiKVM is a remote KVM solution that lets you view video output, control the keyboard and mouse, and..."
+description: "Prepare PiKVM from first boot through password changes, Tailscale access, and virtual-media booting, distinguishing system and media-storage write modes."
 pubDatetime: 2026-07-30T09:34:26.288Z
 updatedDate: 2026-08-31T13:21:24.555Z
 ---

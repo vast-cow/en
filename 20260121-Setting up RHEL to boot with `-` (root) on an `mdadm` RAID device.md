@@ -1,6 +1,6 @@
 ---
 title: "Setting up RHEL to boot with `/` (root) on an `mdadm` RAID device"
-description: "When you place the RHEL root filesystem on a software RAID array built with mdadm, the initramfs..."
+description: "Pass an mdadm array UUID to dracut through GRUB, update BLS boot parameters, and verify that the RAID array assembles early enough to mount the root filesystem."
 pubDatetime: 2026-01-21T09:28:26.048Z
 ---
 

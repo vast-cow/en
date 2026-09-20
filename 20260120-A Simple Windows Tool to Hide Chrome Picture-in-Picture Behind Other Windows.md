@@ -1,6 +1,6 @@
 ---
 title: "A Simple Windows Tool to Hide Chrome Picture-in-Picture Behind Other Windows"
-description: "Chrome’s Picture-in-Picture (PiP) feature is convenient, but on Windows it often behaves like an..."
+description: "Use Python and native Windows APIs to find topmost Chrome windows and remove their pinned stacking behavior without moving, resizing, or activating them."
 pubDatetime: 2026-01-20T03:05:36.755Z
 ---
 

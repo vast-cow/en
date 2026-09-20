@@ -1,6 +1,6 @@
 ---
 title: "How to Remove Specific Files from Git Commit History"
-description: "When working with Git, you might encounter a situation where you want to:   \"Make it as if this file..."
+description: "Remove selected file changes from past commits with interactive rebase, choosing between dropping whole commits and amending only the affected file."
 pubDatetime: 2026-09-01T05:52:58.212Z
 updatedDate: 2026-09-01T07:45:26.128Z
 ---

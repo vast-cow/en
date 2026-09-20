@@ -1,6 +1,6 @@
 ---
 title: "Automated Data Extraction for the BUFFALO WSR-3200AX4S Admin UI"
-description: "This Python tool automates data collection from the BUFFALO WSR-3200AX4S router’s web admin interface..."
+description: "An async Python client logs into a BUFFALO router, extracts WAN DHCP DNS data, validates responses, and archives HTTP bodies and metadata for debugging."
 pubDatetime: 2026-01-19T10:55:28.323Z
 ---
 

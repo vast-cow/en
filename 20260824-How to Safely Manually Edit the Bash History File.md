@@ -1,6 +1,6 @@
 ---
 title: "How to Safely Manually Edit the Bash History File"
-description: "Bash command history is normally stored in $HISTFILE (in many environments,..."
+description: "Coordinate in-memory Bash histories before and after editing HISTFILE, using append and reload operations while accounting for concurrent-session limitations."
 pubDatetime: 2026-08-24T13:52:31.081Z
 ---
 

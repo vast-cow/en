@@ -1,6 +1,6 @@
 ---
 title: "Tampermonkey Script to Fix the Issue Where Long Album Titles Disappear in YouTube Music"
-description: "In YouTube Music, long album titles may sometimes disappear from the screen even though the title..."
+description: "Correct YouTube Music album-title clipping with a userscript that moves two-line truncation onto the title element and adjusts link display."
 pubDatetime: 2026-07-15T06:36:09.243Z
 updatedDate: 2026-07-15T07:20:26.774Z
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Using Windows Name Resolution for SSH in WSL1 Alpine"
-description: "When using the standard Windows SSH client together with tmux, some users occasionally see unwanted..."
+description: "Pair a Windows resolver with a C SSH wrapper in Alpine to resolve otherwise unavailable hostnames, inspect SSH configuration, and connect using a validated IP address."
 pubDatetime: 2026-01-19T09:46:19.624Z
 ---
 

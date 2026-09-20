@@ -1,6 +1,6 @@
 ---
 title: "How to Think About `.gitignore` for Android Studio and a Standard Practical Setup"
-description: "When developing Android apps in Android Studio (Gradle / Kotlin-based), many developers struggle at..."
+description: "Define Android project ignore rules for generated files, local settings, and signing material, while comparing policies for shared IDE configuration and Google Services files."
 pubDatetime: 2026-01-28T14:25:31.357Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Procedure for Changing the rootfs of Rocky Linux 9 to F2FS"
-description: "Procedure for Changing the rootfs of Rocky Linux 9 to F2FS   When changing the root..."
+description: "Migrate a Rocky Linux root filesystem to F2FS using an ELRepo kernel, metadata-preserving backup, initramfs and boot configuration updates, and SELinux relabeling."
 pubDatetime: 2026-06-12T04:24:49.042Z
 ---
 

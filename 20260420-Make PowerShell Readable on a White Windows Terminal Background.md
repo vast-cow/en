@@ -1,6 +1,6 @@
 ---
 title: "Make PowerShell Readable on a White Windows Terminal Background"
-description: "When you switch Windows Terminal to a light or white background, the default PowerShell token colors..."
+description: "Customize PSReadLine token and selection colors for a light terminal background and save the ANSI color settings in the PowerShell profile."
 pubDatetime: 2026-04-20T09:16:08.952Z
 ---
 

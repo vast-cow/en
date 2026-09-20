@@ -1,6 +1,6 @@
 ---
 title: "A Simple Tool for Downloading Files from Hugging Face"
-description: "Developers who work with machine learning models often need to download files from Hugging Face..."
+description: "A Python downloader accepts Hugging Face URLs or repository paths, preserves revisions, previews downloads, and falls back from individual files to directory snapshots."
 pubDatetime: 2026-01-20T02:43:25.912Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "How to Make a `textarea` Automatically Grow With Its Content"
-description: "A textarea that expands as the user types makes forms feel much smoother. Instead of forcing users to..."
+description: "Resize a text field using scrollHeight on input, with CSS to control scrolling and sizing and an explicit resize call after programmatic value changes."
 pubDatetime: 2026-04-22T14:35:04.571Z
 ---
 

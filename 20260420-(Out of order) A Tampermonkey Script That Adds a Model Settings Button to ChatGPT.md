@@ -1,6 +1,6 @@
 ---
 title: "(Out of order) A Tampermonkey Script That Adds a Model Settings Button to ChatGPT"
-description: "This Tampermonkey script is a simple way to make ChatGPT easier to use by adding a Config button to..."
+description: "Add a header shortcut that opens ChatGPT's existing model configuration interface and reattaches when the page header is recreated, with notes on DOM-dependent behavior."
 pubDatetime: 2026-04-20T08:06:24.080Z
 updatedDate: 2026-05-13T03:44:06.754Z
 ---

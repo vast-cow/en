@@ -1,6 +1,6 @@
 ---
 title: "Exposing Supermicro X11DPI (ATEN IPMI) with Tailscale Serve: Use `socat` or Nginx `stream` Instead of an HTTP Reverse Proxy"
-description: "While trying to expose the IPMI interface (ATEN-based) on a Supermicro X11 series motherboard using..."
+description: "Resolve ATEN IPMI CGI failures caused by invalid HTTP headers using TLS-terminated TCP forwarding through Tailscale and socat or Nginx stream."
 pubDatetime: 2026-07-31T11:01:26.884Z
 updatedDate: 2026-07-31T11:03:37.278Z
 ---

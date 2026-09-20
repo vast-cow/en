@@ -1,6 +1,6 @@
 ---
 title: "What is the \"Alerts\" Syntax You Can Use in GitHub Markdown?"
-description: "When reading GitHub READMEs or Issues, you may come across syntax like this:    &gt;..."
+description: "Use GitHub's five alert types to highlight notes and warnings, format multiline content, and account for compatibility with other Markdown renderers."
 pubDatetime: 2026-08-26T06:55:58.209Z
 ---
 

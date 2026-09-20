@@ -1,6 +1,6 @@
 ---
 title: "Installing bcache-tools from Oracle Linux 9 Repository on Rocky Linux 9"
-description: "When running Rocky Linux 9, you may want to install a package that is only available in Oracle Linux..."
+description: "Import Oracle's signing key and restrict its BaseOS repository to bcache-tools, with notes on dependency filtering and the separate requirement for kernel support."
 pubDatetime: 2026-01-19T12:51:51.204Z
 ---
 

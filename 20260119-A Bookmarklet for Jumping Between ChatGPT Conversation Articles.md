@@ -1,6 +1,6 @@
 ---
 title: "A Bookmarklet for Jumping Between ChatGPT Conversation Articles"
-description: "Overview   The content describes a JavaScript bookmarklet designed to help users jump..."
+description: "Navigate long ChatGPT conversations with a searchable article list, keyboard controls, smooth scrolling, and temporary highlighting of the selected message."
 pubDatetime: 2026-01-19T08:40:30.752Z
 ---
 

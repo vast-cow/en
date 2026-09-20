@@ -1,6 +1,6 @@
 ---
 title: "Running dnsmasq as a Dedicated DNS Server with macvlan to Avoid systemd-resolved Conflicts"
-description: "Running a local DNS service on a modern Linux host can be deceptively tricky. On many distributions,..."
+description: "Give dnsmasq its own IP and network namespace using macvlan, with static DNS records, limited privileges, and systemd-managed setup and cleanup."
 pubDatetime: 2026-01-19T11:18:37.916Z
 ---
 

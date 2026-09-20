@@ -1,6 +1,6 @@
 ---
 title: "Using VHD-Distributed Kernel Modules in WSL2"
-description: "Practical Conclusions from Issue #12586   With the 6.6.y kernel series, WSL2 introduced a..."
+description: "Explain WSL's module-image packaging and kernelModules configuration, including older workarounds and consolidating stock-compatible custom modules into one VHDX."
 pubDatetime: 2026-02-14T10:59:32.657Z
 ---
 

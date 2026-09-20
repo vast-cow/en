@@ -1,6 +1,6 @@
 ---
 title: "A Simple Bookmarklet for Setting Text in a Prompt Field"
-description: "Overview   This JavaScript snippet is a bookmarklet designed to simplify the process of..."
+description: "Enter multiline text in a popup and transfer it into a page's prompt editor as paragraphs, with installation instructions and notes on popup and same-origin restrictions."
 pubDatetime: 2026-01-20T06:19:12.498Z
 updatedDate: 2026-04-16T11:08:16.332Z
 ---

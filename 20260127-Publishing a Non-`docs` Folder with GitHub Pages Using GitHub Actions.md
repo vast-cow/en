@@ -1,6 +1,6 @@
 ---
 title: "Publishing a Non-`docs` Folder with GitHub Pages Using GitHub Actions"
-description: "GitHub Pages is often set up to publish from common locations like /docs or a dedicated branch...."
+description: "Deploy an arbitrary static-site directory through GitHub Actions by configuring Pages permissions, path-based triggers, artifact upload, and the deployment environment."
 pubDatetime: 2026-01-27T12:38:02.646Z
 ---
 

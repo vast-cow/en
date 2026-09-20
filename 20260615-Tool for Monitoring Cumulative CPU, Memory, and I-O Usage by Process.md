@@ -1,6 +1,6 @@
 ---
 title: "Tool for Monitoring Cumulative CPU, Memory, and I/O Usage by Process"
-description: "Overview   This is a simple process monitoring tool that runs on Linux.  While the standard..."
+description: "Build a curses process monitor that reads /proc, tracks CPU, memory, and cumulative I/O activity, and supports sorting and configurable refresh behavior."
 pubDatetime: 2026-06-15T03:43:51.427Z
 updatedDate: 2026-06-15T04:39:32.764Z
 ---

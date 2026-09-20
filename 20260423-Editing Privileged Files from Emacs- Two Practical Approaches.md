@@ -1,6 +1,6 @@
 ---
 title: "Editing Privileged Files from Emacs: Two Practical Approaches"
-description: "If you use Emacs with a user-owned daemon and emacsclient, editing privileged files can become..."
+description: "Compare sudoedit policy changes with Emacs TRAMP access, explaining their security models, daemon integration, sudoers configuration, and handling of relative paths."
 pubDatetime: 2026-04-23T07:47:25.770Z
 ---
 

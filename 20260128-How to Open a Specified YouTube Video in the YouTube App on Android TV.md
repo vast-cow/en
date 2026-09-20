@@ -1,6 +1,6 @@
 ---
 title: "How to Open a Specified YouTube Video in the YouTube App on Android TV"
-description: "This article clearly explains how to open a YouTube video in the YouTube app on Android TV, with..."
+description: "Launch YouTube videos with Kotlin intents that prioritize the TV app and fall back to other handlers, accounting for package visibility and non-Activity contexts."
 pubDatetime: 2026-01-28T15:20:07.638Z
 ---
 

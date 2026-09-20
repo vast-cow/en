@@ -1,6 +1,6 @@
 ---
 title: "Bookmarklet for Editing the Prompt Input Field in a Separate Window"
-description: "This bookmarklet lets you open the prompt input field on a page in a separate window, where you can..."
+description: "Edit a page's existing prompt in a larger popup with automatic light and dark styling, then apply multiline text back through a bookmarklet."
 pubDatetime: 2026-06-26T05:30:45.453Z
 ---
 

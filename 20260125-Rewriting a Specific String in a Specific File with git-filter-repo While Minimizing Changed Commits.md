@@ -1,6 +1,6 @@
 ---
 title: "Rewriting a Specific String in a Specific File with git-filter-repo While Minimizing Changed Commits"
-description: "This note explains a practical way to rewrite Git history using git-filter-repo to replace a..."
+description: "Limit a Git text replacement to a chosen file and relevant history range, using a callback that skips binary content and unchanged blobs to reduce unnecessary rewrites."
 pubDatetime: 2026-01-25T14:01:42.300Z
 ---
 

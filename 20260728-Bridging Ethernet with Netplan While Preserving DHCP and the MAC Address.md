@@ -1,6 +1,6 @@
 ---
 title: "Bridging Ethernet with Netplan While Preserving DHCP and the MAC Address"
-description: "When using a Linux machine as a Wi-Fi access point with hostapd, you may want Wi-Fi clients to join..."
+description: "Move DHCP onto a Netplan bridge, retain the Ethernet MAC address, test with automatic rollback, and connect hostapd clients to the wired LAN."
 pubDatetime: 2026-07-28T12:23:28.743Z
 ---
 

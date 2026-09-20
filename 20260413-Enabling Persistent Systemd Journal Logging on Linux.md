@@ -1,6 +1,6 @@
 ---
 title: "Enabling Persistent Systemd Journal Logging on Linux"
-description: "Systemd’s journal (journald) stores system logs, but by default, these logs may not persist across..."
+description: "Create persistent journal storage with the appropriate permissions, restart journald, and verify that logs from previous boots are available for troubleshooting."
 pubDatetime: 2026-04-13T04:58:31.273Z
 ---
 

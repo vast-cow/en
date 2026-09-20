@@ -1,6 +1,6 @@
 ---
 title: "Bridging Ethernet with NetworkManager on Rocky Linux 9 While Preserving DHCP and the MAC Address"
-description: "On Ubuntu, it is common to use Netplan to attach an Ethernet interface to a Linux bridge. On Rocky..."
+description: "Stage a NetworkManager bridge migration with the existing MAC address and DHCP, test activation through a checkpoint, and verify persistence before retiring the old profile."
 pubDatetime: 2026-07-28T12:31:43.829Z
 updatedDate: 2026-09-16T04:13:14.626Z
 ---

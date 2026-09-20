@@ -1,6 +1,6 @@
 ---
 title: "How to Check and Configure bcache `discard` and `cache_mode`"
-description: "bcache lets you use a fast device, such as an SSD, as a cache for a slower storage device, such as an..."
+description: "Inspect bcache sysfs settings, enable discard, and switch to writethrough mode, with an explanation of write behavior and the need to confirm device names."
 pubDatetime: 2026-05-03T07:20:14.503Z
 ---
 

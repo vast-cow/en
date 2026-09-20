@@ -1,6 +1,6 @@
 ---
 title: "Extracting a Shared Box URL from the Login Page"
-description: "When you open a Box file link on Windows, your browser may redirect you to the Box login page instead..."
+description: "Recover a Box destination from the login page's redirect parameter and copy the reconstructed sharing URL to the clipboard with a browser bookmarklet."
 pubDatetime: 2026-01-19T10:23:36.831Z
 ---
 

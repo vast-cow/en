@@ -1,6 +1,6 @@
 ---
 title: "Audio Segmentation with YAMNet: Detecting Speech, Music, and Silence"
-description: "This article explains a Python program that analyzes an audio file and automatically segments it into..."
+description: "Combine audio volume thresholds with YAMNet classification, merge adjacent speech and music chunks, and refine transition boundaries to produce timestamped segments."
 pubDatetime: 2026-02-16T07:39:45.796Z
 ---
 

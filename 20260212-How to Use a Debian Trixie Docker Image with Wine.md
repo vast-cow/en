@@ -1,6 +1,6 @@
 ---
 title: "How to Use a Debian Trixie Docker Image with Wine"
-description: "This Dockerfile creates a container based on Debian Trixie with Wine installed. The main purpose is..."
+description: "Build a Debian container with WineHQ Stable and i386 support, then run Windows executables interactively or from a mounted host directory."
 pubDatetime: 2026-02-12T11:45:52.867Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "How to Automatically Re-Enable Low Power Mode on iPhone"
-description: "And Add a Shortcut to Toggle the Automation On and Off   Low Power Mode on iPhone is useful,..."
+description: "Combine iPhone Shortcuts and a personal automation to restore Low Power Mode when it turns off, using a local flag file and a separate toggle for manual control."
 pubDatetime: 2026-03-29T07:54:15.908Z
 ---
 

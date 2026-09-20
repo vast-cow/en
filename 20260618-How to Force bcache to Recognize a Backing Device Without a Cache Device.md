@@ -1,6 +1,6 @@
 ---
 title: "How to Force bcache to Recognize a Backing Device Without a Cache Device"
-description: "In an environment using bcache, if the cache device fails, disappears, or is disconnected, the bcache..."
+description: "Force a bcache backing device to run after its cache becomes unavailable, with recovery guidance and the risk of losing dirty writeback data."
 pubDatetime: 2026-06-18T09:14:43.407Z
 ---
 

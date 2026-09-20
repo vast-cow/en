@@ -1,6 +1,6 @@
 ---
 title: "mdadm RAID Recovery Test Helper"
-description: "This script is a tool for safely testing possible RAID configurations with Linux mdadm. Its main..."
+description: "Search RAID disk orders and metadata parameters using temporary snapshot overlays, read-only mount probes, resumable CSV results, and sample file listings to investigate recovery candidates."
 pubDatetime: 2026-05-01T04:25:48.716Z
 ---
 

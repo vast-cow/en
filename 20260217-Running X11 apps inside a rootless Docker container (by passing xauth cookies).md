@@ -1,6 +1,6 @@
 ---
 title: "Running X11 apps inside a rootless Docker container (by passing xauth cookies)"
-description: "Rootless Docker is great for reducing host privileges, but GUI apps can be a bit tricky—especially..."
+description: "Pass an X11 authentication cookie into a rootless container, configure a reachable display, and test GUI access with xev while troubleshooting network and display mismatches."
 pubDatetime: 2026-02-17T06:37:00.866Z
 ---
 

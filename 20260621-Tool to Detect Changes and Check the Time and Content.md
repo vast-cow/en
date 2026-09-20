@@ -1,6 +1,6 @@
 ---
 title: "Tool to Detect Changes and Check the Time and Content"
-description: "This script is a tool that periodically checks the output of a specified command and displays the..."
+description: "Monitor a command's standard output with a Python script that timestamps changes and runs a trigger command at startup and whenever the output changes."
 pubDatetime: 2026-06-21T06:24:56.387Z
 updatedDate: 2026-06-21T07:16:23.457Z
 ---

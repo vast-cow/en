@@ -1,6 +1,6 @@
 ---
 title: "For Google TV (Android TV OS): Launching a Minimal App with Android Studio + Kotlin"
-description: "Target: Google TV (= Android TV OS) Goal: Get to the point where a minimal app can be launched using..."
+description: "Create a minimal Kotlin TV project, enable device debugging, pair a physical Google TV device through adb, and launch the app from Android Studio."
 pubDatetime: 2026-01-28T15:06:09.992Z
 updatedDate: 2026-02-01T12:16:43.177Z
 ---

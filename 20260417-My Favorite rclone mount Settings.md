@@ -1,6 +1,6 @@
 ---
 title: "My Favorite rclone mount Settings"
-description: "rclone mount is a useful way to access remote storage as if it were a local folder. With the right..."
+description: "Configure full VFS caching with immediate writeback, short metadata lifetimes, disabled polling, and modest read-ahead to favor fresh remote-file visibility."
 pubDatetime: 2026-04-17T06:25:09.008Z
 ---
 

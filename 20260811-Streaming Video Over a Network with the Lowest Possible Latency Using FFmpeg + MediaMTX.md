@@ -1,6 +1,6 @@
 ---
 title: "Streaming Video Over a Network with the Lowest Possible Latency Using FFmpeg + MediaMTX"
-description: "When you want to send video captured from an HDMI capture device or similar source to another PC on..."
+description: "Configure on-demand HDMI streaming with QSV encoding, MediaMTX, and ffplay, reducing queues and frame reordering while balancing latency against quality and packet-loss tolerance."
 pubDatetime: 2026-08-11T06:54:54.962Z
 updatedDate: 2026-08-12T04:18:56.930Z
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Copy Multiple Files to Markdown with One Script for GitHub Gist"
-description: "This JavaScript snippet is a self-invoking utility designed to collect multiple file entries from a..."
+description: "Export multiple editable Gist files to the clipboard as one Markdown document, preserving filenames and choosing language labels and code fences for each file."
 pubDatetime: 2026-01-19T08:54:22.358Z
 updatedDate: 2026-01-19T14:36:26.607Z
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Building a “Software HSM” Workflow with SoftHSM2, OpenSC, and Python (Private Key Never Exported)"
-description: "This article explains a practical, end-to-end workflow for using SoftHSM2 as a software-backed HSM..."
+description: "Set up PKCS#11 tokens, generate RSA keys, and invoke private-key operations from Python, including hybrid encryption and the security limits of software-backed key storage."
 pubDatetime: 2026-01-19T11:05:47.467Z
 ---
 

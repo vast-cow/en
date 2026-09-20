@@ -1,6 +1,6 @@
 ---
 title: "Managing Diffs When Letting AI Agents Work on Massive Repositories"
-description: "When you let an AI agent operate on a very large repository, managing the differences before and..."
+description: "Use copy-on-write filesystem copies to isolate AI-assisted edits in large repositories, compare changes, and integrate selected results alongside Git history."
 pubDatetime: 2026-06-03T08:16:14.445Z
 ---
 

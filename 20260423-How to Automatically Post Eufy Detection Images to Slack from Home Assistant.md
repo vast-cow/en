@@ -1,6 +1,6 @@
 ---
 title: "How to Automatically Post Eufy Detection Images to Slack from Home Assistant"
-description: "If you already have Eufy integrated with Home Assistant and can access the camera’s event image, the..."
+description: "Configure a Slack bot and Home Assistant notification service, then save and upload Eufy event snapshots, with troubleshooting for scopes, file access, service names, and YAML."
 pubDatetime: 2026-04-23T07:25:35.834Z
 updatedDate: 2026-04-23T08:11:29.086Z
 ---

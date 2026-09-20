@@ -1,6 +1,6 @@
 ---
 title: "Safely Backing Up and Restoring iptables and ip6tables Rules on Linux"
-description: "When experimenting with firewall rules, it is essential to have a reliable way to revert to a..."
+description: "Save IPv4 and IPv6 firewall rules before experiments, restore the original configuration, and account for firewall managers and automatic rollback when working remotely."
 pubDatetime: 2026-01-19T10:14:56.429Z
 ---
 

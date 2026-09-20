@@ -1,6 +1,6 @@
 ---
 title: "Windows 11 Setup Bypass Toolkit: Requirement Gating and Local-Account-Only OOBE"
-description: "Bias Setup’s eligibility checks (installation requirements): Launch Windows Setup in a way that can..."
+description: "Outline unofficial Windows installation and local-account setup commands, along with compatibility, edition, and support limitations that affect their use."
 pubDatetime: 2026-01-19T11:26:30.519Z
 ---
 

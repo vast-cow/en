@@ -1,6 +1,6 @@
 ---
 title: "A Bookmarklet to Copy Codex Assistant Replies and PR Messages to Your Clipboard"
-description: "Overview   The content describes a JavaScript bookmarklet designed for the Codex web UI. Its..."
+description: "Extract chronological message text and pull request titles and bodies from a Codex task's page state, then present each item in an overlay with clipboard fallbacks."
 pubDatetime: 2026-01-28T07:38:05.923Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Interactive SLURM Job Attachment with Bash"
-description: "This script provides a streamlined method for attaching an interactive shell to a running SLURM job...."
+description: "A Bash helper lists the user's running SLURM jobs, offers fzf selection when needed, and opens an overlapping interactive login shell inside the chosen allocation."
 pubDatetime: 2026-04-13T09:49:03.413Z
 updatedDate: 2026-04-14T07:14:25.535Z
 ---

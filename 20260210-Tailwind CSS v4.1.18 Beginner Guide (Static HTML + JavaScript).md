@@ -1,6 +1,6 @@
 ---
 title: "Tailwind CSS v4.1.18 Beginner Guide (Static HTML + JavaScript)"
-description: "A practical setup that builds only the CSS you actually use — with a polished Light/Dark toggle..."
+description: "Build a static Tailwind interface with vanilla JavaScript, generated utility CSS, a persistent light/dark toggle, and troubleshooting for missing styles and theme variants."
 pubDatetime: 2026-02-10T03:04:31.912Z
 updatedDate: 2026-02-10T03:12:15.638Z
 ---

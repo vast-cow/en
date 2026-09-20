@@ -1,6 +1,6 @@
 ---
 title: "Rootless Tailscale Setup and Serving"
-description: "1) Assumption: rootless mode requires userspace networking   Without root, you generally..."
+description: "Run Tailscale with userspace networking and local state as an ordinary user, authenticate to a tailnet, and configure, test, or disable raw TCP forwarding."
 pubDatetime: 2026-01-19T15:33:21.445Z
 ---
 

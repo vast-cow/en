@@ -1,6 +1,6 @@
 ---
 title: "Comparing Linux ISOs for System Rescue"
-description: "When maintaining Linux servers or migrating disks, it's useful to keep a rescue Live ISO on hand in..."
+description: "Compare rescue environments by tools, size, and use case, from disk cloning and partition repair to filesystem migration and chroot-based server maintenance."
 pubDatetime: 2026-07-28T05:54:42.074Z
 ---
 

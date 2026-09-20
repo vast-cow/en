@@ -1,6 +1,6 @@
 ---
 title: "Limiting the Maximum CPU Frequency in Windows"
-description: "I looked into how to limit the maximum CPU frequency on a Panasonic Let’s note CF-FV5USVCP running..."
+description: "Configure Windows processor frequency limits across power schemes and efficiency classes, then use a Python task to reapply them after startup and resume."
 pubDatetime: 2026-05-13T06:54:42.085Z
 updatedDate: 2026-05-13T07:34:17.798Z
 ---

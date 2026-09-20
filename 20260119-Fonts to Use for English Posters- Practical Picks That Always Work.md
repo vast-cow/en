@@ -1,6 +1,6 @@
 ---
 title: "Fonts to Use for English Posters: Practical Picks That Always Work"
-description: "When you design an English-language poster, two things matter more than anything else: legibility..."
+description: "Choose headline and body fonts for academic, business, and event posters, with guidance on legibility, weights, numerals, font pairing, and reliable print export."
 pubDatetime: 2026-01-19T08:46:43.624Z
 ---
 

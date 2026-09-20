@@ -1,6 +1,6 @@
 ---
 title: "Listening to Battery Percentage Changes on Windows with Python and Win32 Messages"
-description: "This script is a Windows-only Python program that monitors battery percentage changes in real time by..."
+description: "Monitor battery level and AC/DC changes through Python ctypes callbacks, issue charging reminders, and shut down a hidden Win32 message window cleanly on Ctrl+C."
 pubDatetime: 2026-01-19T08:27:11.875Z
 updatedDate: 2026-01-19T13:36:10.389Z
 ---

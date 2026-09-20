@@ -1,6 +1,6 @@
 ---
 title: "Capturing DHCP-Assigned Network Parameters Using a Temporary macvlan in a Linux Network Namespace"
-description: "This article explains a simple workflow for safely obtaining network configuration information—such..."
+description: "Probe DHCP configuration in an isolated network namespace, export the resulting MAC, IP addresses, and gateways to a shell file, and remove the temporary interfaces afterward."
 pubDatetime: 2026-01-19T11:08:36.658Z
 ---
 

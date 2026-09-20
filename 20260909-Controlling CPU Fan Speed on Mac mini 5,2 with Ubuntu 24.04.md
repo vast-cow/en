@@ -1,6 +1,6 @@
 ---
 title: "Controlling CPU Fan Speed on Mac mini 5,2 with Ubuntu 24.04"
-description: "If you have a Mac mini 5,2 (Mid 2011) running Ubuntu 24.04, a convenient setup is to use applesmc +..."
+description: "Inspect Intel Mac fan limits through applesmc, test manual RPM control, and configure mbpfan for temperature-based operation with live monitoring."
 pubDatetime: 2026-09-09T01:54:03.910Z
 ---
 

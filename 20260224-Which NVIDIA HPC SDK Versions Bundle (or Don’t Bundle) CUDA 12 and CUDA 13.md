@@ -1,6 +1,6 @@
 ---
 title: "Which NVIDIA HPC SDK Versions Bundle (or Don’t Bundle) CUDA 12 and CUDA 13"
-description: "Goal / Interpretation of “latest” Latest HPC SDK version that matches Bundled CUDA toolchains (as..."
+description: "Compare the HPC SDK release boundaries for bundled CUDA 12 and 13 toolchains, including the last releases before each transition and the first releases that include them."
 pubDatetime: 2026-02-24T07:36:07.502Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "How to Squash Past Commits with Git Rebase"
-description: "Squashing commits with Git’s rebase command is useful when you want to clean up your commit history...."
+description: "Combine commits through interactive rebase, handle conflicts and commit messages, and use --root when the initial commit must be included."
 pubDatetime: 2026-08-24T08:20:38.714Z
 ---
 

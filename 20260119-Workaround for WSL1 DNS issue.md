@@ -1,6 +1,6 @@
 ---
 title: "Workaround for WSL1 DNS issue"
-description: "Prevent WSL from overwriting DNS settings by setting generateResolvConf = false in..."
+description: "Disable automatic resolver-file generation in WSL and use PowerShell to populate Linux DNS settings from Windows adapters associated with default routes."
 pubDatetime: 2026-01-19T11:30:31.752Z
 ---
 

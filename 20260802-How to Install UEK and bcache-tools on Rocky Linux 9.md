@@ -1,6 +1,6 @@
 ---
 title: "How to Install UEK and bcache-tools on Rocky Linux 9"
-description: "Strategy   Keep Rocky Linux 9 BaseOS/AppStream unchanged, and only retrieve the following..."
+description: "Install selected Oracle UEK and bcache packages through restricted repositories, verify boot and driver compatibility, and retain the Rocky kernel for rollback."
 pubDatetime: 2026-08-02T06:11:33.033Z
 ---
 

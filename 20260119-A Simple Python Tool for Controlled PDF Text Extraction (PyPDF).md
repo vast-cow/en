@@ -1,6 +1,6 @@
 ---
 title: "A Simple Python Tool for Controlled PDF Text Extraction (PyPDF)"
-description: "This script is a compact, command-line Python program designed to extract text from PDF files in a..."
+description: "Extract PDF text with a Python CLI that supports font filtering, sentence line breaks, hyphenated word merging, and streaming output for further processing."
 pubDatetime: 2026-01-19T08:48:19.621Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Updating the Rocky Linux Version"
-description: "Upgrading from Rocky Linux 9.5 to 9.6 can normally be done with a standard DNF update.          ..."
+description: "Update Rocky Linux within a major release using DNF, check for pinned release versions, and verify the result after rebooting."
 pubDatetime: 2026-07-01T04:42:29.972Z
 ---
 

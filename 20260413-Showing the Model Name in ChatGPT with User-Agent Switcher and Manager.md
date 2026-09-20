@@ -1,6 +1,6 @@
 ---
 title: "Showing the Model Name in ChatGPT with User-Agent Switcher and Manager"
-description: "This article explains a simple way to make the model name appear more explicitly in the ChatGPT..."
+description: "Apply a domain-specific iPhone Chrome user agent to request a ChatGPT interface variant with clearer model identification, while excluding protected authentication domains."
 pubDatetime: 2026-04-13T10:03:22.107Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "A Bookmarklet to Prevent `\\n` in Codex Prompt Input"
-description: "Overview   This article introduces a simple JavaScript bookmarklet that removes unwanted \\n..."
+description: "Remove carriage returns and newline characters from paragraphs inside a browser prompt editor with a JavaScript snippet or bookmarklet before submitting the text."
 pubDatetime: 2026-01-27T17:12:25.709Z
 updatedDate: 2026-01-27T17:30:46.179Z
 ---

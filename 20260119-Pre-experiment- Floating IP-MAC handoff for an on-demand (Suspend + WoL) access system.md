@@ -1,6 +1,6 @@
 ---
 title: "Pre-experiment: Floating IP/MAC handoff for an on-demand (Suspend + WoL) access system"
-description: "Goal   I want to build a system where a target machine stays in Suspend while idle, and is..."
+description: "A Linux namespace experiment tests whether pending TCP connections survive a service IP/MAC handoff, examining packet dropping, ARP behavior, single ownership, and wake-up constraints."
 pubDatetime: 2026-01-19T07:53:46.568Z
 updatedDate: 2026-09-20T10:07:17.729Z
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Bridging a System-Level systemd Target to the User Instance"
-description: "When working with systemd, it is common to rely on network-online.target to ensure services start..."
+description: "Forward system network readiness to a user's systemd instance through a templated service and marker target, with linger enabling operation without an active login."
 pubDatetime: 2026-01-19T14:49:24.325Z
 ---
 

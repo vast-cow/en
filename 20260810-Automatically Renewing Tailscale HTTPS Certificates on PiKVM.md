@@ -1,6 +1,6 @@
 ---
 title: "Automatically Renewing Tailscale HTTPS Certificates on PiKVM"
-description: "It is appropriate to continue using    ssl_certificate..."
+description: "Renew certificates for PiKVM's own Nginx with a systemd timer that checks validity, validates replacement keys, supports rollback, and restores read-only operation."
 pubDatetime: 2026-08-10T07:08:34.109Z
 updatedDate: 2026-08-31T14:55:39.031Z
 ---

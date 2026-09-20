@@ -1,6 +1,6 @@
 ---
 title: "How to Use Windows Mobile Hotspot Without an Internet Connection"
-description: "Purpose   This program is designed to make Windows always pass its internet connectivity..."
+description: "Use a Python HTTP server and registry change to satisfy Windows connectivity probes locally, enabling an offline hotspot without providing internet access."
 pubDatetime: 2026-07-03T08:34:16.519Z
 ---
 

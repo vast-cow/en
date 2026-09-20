@@ -1,6 +1,6 @@
 ---
 title: "Build a full-text search and comment-enabled blog using GitHub Pages"
-description: "If you want to implement a \"Markdown-based blog,\" \"full-text search,\" and \"comments\" on GitHub Pages,..."
+description: "Plan a static Markdown blog with Astro, Pagefind search, giscus comments, and GitHub Actions deployment, including stable comment IDs and Japanese search support."
 pubDatetime: 2026-09-19T11:48:36.439Z
 ---
 

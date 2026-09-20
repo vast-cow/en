@@ -1,6 +1,6 @@
 ---
 title: "Archiving ChatGPT Conversations with a Bookmarklet"
-description: "This script is a JavaScript bookmarklet designed to help users archive multiple ChatGPT conversations..."
+description: "Select multiple conversations from ChatGPT's history in an injected overlay and archive them sequentially using the page's session token, with progress logging and duplicate-click prevention."
 pubDatetime: 2026-02-08T12:36:56.870Z
 updatedDate: 2026-04-10T00:52:08.979Z
 ---

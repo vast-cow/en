@@ -1,6 +1,6 @@
 ---
 title: "How to Limit NVIDIA GPU Core and Memory Clocks"
-description: "Linux: Limit Clocks with nvidia-smi   On supported GPUs, you can directly specify the core..."
+description: "Inspect supported NVIDIA clock ranges, apply and reset core or memory limits with nvidia-smi, and use power limits when direct clock control is unavailable."
 pubDatetime: 2026-07-28T05:58:44.003Z
 ---
 

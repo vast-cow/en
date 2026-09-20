@@ -1,6 +1,6 @@
 ---
 title: "Automating TLS Certificate Renewal with systemd and `certbot` with Strong Privilege Separation"
-description: "This setup automates Let’s Encrypt certificate renewal with certbot, scheduled by systemd, while..."
+description: "Automate certificate issuance under an unprivileged account while reserving deployment for root, with temporary UPnP access, renewal hooks, and validation before service restarts."
 pubDatetime: 2026-01-19T09:58:40.606Z
 updatedDate: 2026-01-19T10:03:38.984Z
 ---

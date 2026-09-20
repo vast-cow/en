@@ -1,6 +1,6 @@
 ---
 title: "A Simple Bookmarklet Selector UI"
-description: "This article explains a JavaScript bookmarklet that provides a user interface for selecting and..."
+description: "Combine multiple bookmarklets in a searchable modal menu with keyboard navigation, ARIA attributes, and cleanup that restores the page before running a selection."
 pubDatetime: 2026-01-19T08:38:58.571Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "How to Use `getopt` with `getopt.h` / `getopt.c` in MSVC and Licensing Considerations"
-description: "Prerequisites   The Windows MSVC environment does not provide the POSIX-style getopt.h /..."
+description: "Integrate MinGW-w64 getopt source files into an MSVC project, parse short and long options, and preserve the applicable third-party license notices."
 pubDatetime: 2026-06-23T10:16:23.013Z
 updatedDate: 2026-06-23T10:20:36.477Z
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Adding Authentication to an Existing Web App with Nginx + Authelia"
-description: "Yes, given that condition, it's appropriate to completely rely on Nginx + an external authentication..."
+description: "Delegate login and MFA to Authelia through Nginx, pass trusted identity headers to a private backend, and retain application-level authorization."
 pubDatetime: 2026-09-19T11:51:27.735Z
 ---
 

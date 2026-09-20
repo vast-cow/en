@@ -1,6 +1,6 @@
 ---
 title: "How to Bypass Issues with Long Draft Messages in ChatGPT URLs"
-description: "The Problem with Long Draft Messages   When you use a standard ChatGPT URL with a long..."
+description: "Use a URL fragment before the draft-message parameter as a workaround when a long ChatGPT query string fails to load correctly."
 pubDatetime: 2026-01-27T15:32:11.391Z
 updatedDate: 2026-01-27T15:34:18.977Z
 ---

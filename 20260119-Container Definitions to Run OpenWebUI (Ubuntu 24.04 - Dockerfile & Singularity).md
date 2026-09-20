@@ -1,6 +1,6 @@
 ---
 title: "Container Definitions to Run OpenWebUI (Ubuntu 24.04 / Dockerfile & Singularity)"
-description: "Unified base OS: Both Docker and Singularity use Ubuntu 24.04 to keep the runtime environment..."
+description: "Minimal Ubuntu 24.04 Docker and Singularity definitions install Python, virtual environment support, and FFmpeg with noninteractive package setup and cache cleanup."
 pubDatetime: 2026-01-19T11:27:09.921Z
 ---
 

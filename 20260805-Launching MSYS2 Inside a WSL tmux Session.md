@@ -1,6 +1,6 @@
 ---
 title: "Launching MSYS2 Inside a WSL tmux Session"
-description: "This setup allows you to start a WSL tmux session from MSYS2 and then launch an interactive MSYS2..."
+description: "Launch MSYS2 shells in WSL tmux panes using a dedicated server, environment forwarding, and path-conversion exclusions."
 pubDatetime: 2026-08-05T07:47:59.918Z
 ---
 

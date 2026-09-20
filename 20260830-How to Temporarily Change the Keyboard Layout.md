@@ -1,6 +1,6 @@
 ---
 title: "How to Temporarily Change the Keyboard Layout"
-description: "In a Linux desktop environment, you can temporarily change the keyboard layout using the setxkbmap..."
+description: "Switch between US and Japanese layouts with setxkbmap, inspect the active configuration, and understand why the change may reset after logout."
 pubDatetime: 2026-08-30T07:29:13.210Z
 ---
 

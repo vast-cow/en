@@ -1,6 +1,6 @@
 ---
 title: "How to Change the Hostname in WSL"
-description: "In WSL, you can change the hostname used within the Linux environment.  Setting the hostname to an..."
+description: "Set a persistent hostname in /etc/wsl.conf and restart the distribution so WSL applies the network configuration."
 pubDatetime: 2026-06-03T06:02:41.532Z
 ---
 

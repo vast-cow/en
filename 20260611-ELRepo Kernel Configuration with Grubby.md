@@ -1,6 +1,6 @@
 ---
 title: "ELRepo Kernel Configuration with Grubby"
-description: "You can configure it as follows. Whether using kernel-ml or kernel-lt, ELRepo kernels are typically..."
+description: "Inspect installed kernel versions, select the latest ELRepo kernel with grubby, and verify the default boot entry and running kernel."
 pubDatetime: 2026-06-11T11:41:58.676Z
 ---
 

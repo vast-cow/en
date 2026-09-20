@@ -1,6 +1,6 @@
 ---
 title: "Set up a bcache partition and evaluate its performance"
-description: "Set up a bcache partition            Identifying NVME block size      $ sudo nvme..."
+description: "Create and attach bcache cache and backing devices, configure discard and writeback, and measure random-read behavior while managing memory and device caches."
 pubDatetime: 2026-01-19T15:30:21.386Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Running a non-root Samba server on Singularity (Apptainer) using a non-privileged port and sharing `$HOME`"
-description: "This guide documents how to run a Samba server inside a Singularity / Apptainer container under the..."
+description: "Use Apptainer fakeroot and home-directory bind mounts to run Samba on port 1445, with writable state and logs in user space and fixes for container path errors."
 pubDatetime: 2026-04-16T12:56:45.549Z
 ---
 

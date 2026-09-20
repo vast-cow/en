@@ -1,6 +1,6 @@
 ---
 title: "Keeping Rocky Linux 9 Up to Date with `dnf-automatic`"
-description: "Keeping your system updated is one of the most important steps for maintaining security, stability,..."
+description: "Configure DNF timers for automatic updates or MOTD-only notifications, control package downloads, and verify which timer settings take precedence."
 pubDatetime: 2026-08-04T06:50:08.333Z
 updatedDate: 2026-08-04T06:51:09.476Z
 ---

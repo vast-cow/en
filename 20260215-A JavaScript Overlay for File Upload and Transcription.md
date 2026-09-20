@@ -1,6 +1,6 @@
 ---
 title: "A JavaScript Overlay for File Upload and Transcription"
-description: "This script is an immediately invoked async function that creates a browser-based overlay for..."
+description: "Upload a selected file to ChatGPT's transcription endpoint through a browser overlay that uses the current session token, detects audio duration, and displays text or API errors."
 pubDatetime: 2026-02-15T14:48:58.003Z
 updatedDate: 2026-02-15T15:03:06.357Z
 ---

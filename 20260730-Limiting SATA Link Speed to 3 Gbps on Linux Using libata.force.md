@@ -1,6 +1,6 @@
 ---
 title: "Limiting SATA Link Speed to 3 Gbps on Linux Using libata.force"
-description: "You can use the Linux kernel boot parameter libata.force to limit the link speed of a specific ATA..."
+description: "Identify Linux ATA ports, persist a per-port SATA negotiation limit in GRUB, and verify the resulting link speed through boot logs and sysfs."
 pubDatetime: 2026-07-30T13:55:58.304Z
 ---
 

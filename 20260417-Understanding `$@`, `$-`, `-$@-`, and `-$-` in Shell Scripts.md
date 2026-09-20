@@ -1,6 +1,6 @@
 ---
 title: "Understanding `$@`, `$*`, `\"$@\"`, and `\"$*\"` in Shell Scripts"
-description: "When working with shell scripts, handling command-line arguments correctly is critical. Variables..."
+description: "Compare quoted and unquoted positional-argument expansion, showing how argument boundaries, spaces, and IFS affect forwarding, iteration, and combined-string output."
 pubDatetime: 2026-04-17T10:20:55.000Z
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Using Raspberry Pi 4, Raspberry Pi OS, and Docker to Connect Home Assistant with a Eufy IndoorCam 2K Pan & Tilt and Save Images When a Pet Is Detected"
-description: "I wanted to connect an Anker Eufy IndoorCam 2K Pan &amp; Tilt to Home Assistant and automatically..."
+description: "Deploy Home Assistant and an Eufy websocket bridge on a Raspberry Pi, configure HACS integration, and save timestamped pet-event images with authentication and automation troubleshooting."
 pubDatetime: 2026-04-23T08:00:06.700Z
 updatedDate: 2026-04-23T08:14:32.401Z
 ---

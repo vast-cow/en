@@ -1,6 +1,6 @@
 ---
 title: "Switching from the ChatGPT Web Page to the ChatGPT App on iOS"
-description: "On iOS, it is possible to move directly from the ChatGPT website in a browser to the ChatGPT app by..."
+description: "A bookmarklet replaces the current page's URL scheme with chatgpt:// while preserving its path, query, and fragment to attempt a handoff to the iOS app."
 pubDatetime: 2026-01-19T10:53:35.035Z
 ---
 

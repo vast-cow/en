@@ -1,6 +1,6 @@
 ---
 title: "Why Ctrl+C “Doesn’t Work” in a Windows Message Loop: `GetMessageW()` Blocking, and Two Practical Fixes"
-description: "If you are running a Windows message loop from Python (for example via ctypes) and notice that..."
+description: "Explain why blocking Win32 calls delay Python's Ctrl+C handling and compare immediate shutdown through a console event with periodic timer-based wakeups."
 pubDatetime: 2026-01-19T08:08:07.545Z
 ---
 
