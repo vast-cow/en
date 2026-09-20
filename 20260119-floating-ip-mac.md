@@ -1,6 +1,5 @@
 ---
 title: Pre-experiment: Floating IP/MAC handoff for an on-demand (Suspend + WoL) access system
-published: true
 description: A pre-experiment validating whether a fixed service IP/MAC can be handed off between an always-on standby node and a suspended target machine while preserving TCP connection attempts. Using Linux network namespaces, macvlan, and controlled packet dropping, the experiment examines TCP retry behavior, ARP/FDB convergence, and the requirements for building an on-demand Suspend + Wake-on-LAN access system.
 pubDatetime: 2026-01-19T07:51:00
 ---
