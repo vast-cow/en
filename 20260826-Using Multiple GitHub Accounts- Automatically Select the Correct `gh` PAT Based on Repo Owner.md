@@ -19,13 +19,15 @@ Git Credential Manager or `gh auth git-credential` might default to the currentl
 remote: Permission to owner/repo.git denied to other-user.
 ```
 
-To address this, the `owner` portion of the remote URL is interpreted as the GitHub CLI account name, and a credential helper is embedded directly into the `.gitconfig` file. This helper retrieves the PAT using:
+To address this, the `owner` portion of the remote URL can be used to determine the GitHub CLI account, and a credential helper can be embedded directly into the `.gitconfig` file. This helper retrieves the PAT using:
 
 ```bash
-gh auth token --user OWNER
+gh auth token --user ACCOUNT
 ```
 
 and provides it to Git.
+
+For personal repositories, the repository owner can be used directly as the account name. For organization-owned repositories, where the repository owner and the account used for authentication differ, explicit mappings can be added.
 
 This eliminates the need for external scripts.
 
@@ -43,7 +45,7 @@ If you have multiple accounts registered, you can verify them with:
 gh auth status
 ```
 
-With this method, if a repository URL is:
+With the basic method, if a repository URL is:
 
 ```text
 https://github.com/aont/foo.git
@@ -57,15 +59,17 @@ gh auth token --user aont
 
 will be executed.
 
-Therefore, the basic assumption is:
+Therefore, the default assumption is:
 
 ```text
 repository owner = gh registered account name
 ```
 
+When this assumption does not hold, explicit mappings can override it.
+
 ## `.gitconfig`
 
-The configuration should be as follows:
+A configuration supporting both the default owner-based behavior and explicit account mappings can be written as follows:
 
 ```gitconfig
 [credential]
@@ -75,11 +79,24 @@ The configuration should be as follows:
     helper =
     helper = "!f() { \
         [ \"$1\" = get ] || exit 0; \
-        account=''; \
+        path=''; \
         while IFS='=' read -r k v; do \
-            [ \"$k\" = path ] && account=${v%%/*}; \
+            [ \"$k\" = path ] && path=$v; \
         done; \
-        [ -n \"$account\" ] || exit 0; \
+        [ -n \"$path\" ] || exit 0; \
+        owner=${path%%/*}; \
+        repo=${path#*/}; \
+        repo=${repo%.git}; \
+        case \"$owner/$repo\" in \
+            my-org/special-repo) account='special-account' ;; \
+            *) \
+                case \"$owner\" in \
+                    my-org) account='my-work-account' ;; \
+                    another-org) account='another-account' ;; \
+                    *) account=\"$owner\" ;; \
+                esac \
+                ;; \
+        esac; \
         token=$(gh auth token --user \"$account\") || exit 0; \
         printf 'username=%s\\npassword=%s\\n' \"$account\" \"$token\"; \
     }; f"
@@ -98,7 +115,7 @@ The configuration should be as follows:
     }; f"
 ```
 
-There are three key points:
+There are four key points.
 
 ## `credential.useHttpPath = true` is Important
 
@@ -109,13 +126,11 @@ protocol=https
 host=github.com
 ```
 
-However, in this case, we need:
+However, in this case, we need the path:
 
 ```text
 aont/foo.git
 ```
-
-the path.
 
 Therefore, set:
 
@@ -132,12 +147,28 @@ host=github.com
 path=aont/foo.git
 ```
 
-## Use the Beginning of the Path as the Account
+## Use the Beginning of the Path as the Default Account
 
-Inside the helper, the first element of the path is extracted using:
+Inside the helper, the path is first stored:
 
 ```sh
-[ "$k" = path ] && account=${v%%/*}
+path=''
+while IFS='=' read -r k v; do
+    [ "$k" = path ] && path=$v
+done
+```
+
+The repository owner is then extracted using:
+
+```sh
+owner=${path%%/*}
+```
+
+and the repository name is extracted using:
+
+```sh
+repo=${path#*/}
+repo=${repo%.git}
 ```
 
 For example, if:
@@ -149,10 +180,17 @@ path=aont/foo.git
 then:
 
 ```text
-account=aont
+owner=aont
+repo=foo
 ```
 
-After that, the corresponding PAT for that account is retrieved from the GitHub CLI using:
+Unless an explicit mapping exists, the owner is used directly as the GitHub CLI account:
+
+```sh
+account="$owner"
+```
+
+The corresponding PAT is then retrieved using:
 
 ```sh
 token=$(gh auth token --user "$account")
@@ -172,7 +210,7 @@ gh auth token --user aont
 
 is automatically executed.
 
-Conversely, for:
+Similarly, for:
 
 ```text
 https://github.com/another-user/bar.git
@@ -187,6 +225,133 @@ gh auth token --user another-user
 is executed.
 
 There is no need to run `gh auth switch` every time.
+
+## Map Organization Owners to GitHub Accounts
+
+The simple `owner = account` rule works well for repositories owned by personal accounts, but it does not necessarily work for organization-owned repositories.
+
+For example, suppose the remote URL is:
+
+```text
+https://github.com/my-org/foo.git
+```
+
+but the GitHub account that has access to the organization is:
+
+```text
+my-work-account
+```
+
+In that case:
+
+```text
+repository owner = my-org
+authentication account = my-work-account
+```
+
+so executing:
+
+```bash
+gh auth token --user my-org
+```
+
+would be incorrect.
+
+The helper can handle this with an owner-level mapping:
+
+```sh
+case "$owner" in
+    my-org) account='my-work-account' ;;
+    another-org) account='another-account' ;;
+    *) account="$owner" ;;
+esac
+```
+
+This means:
+
+```text
+github.com/my-org/foo
+        ↓
+owner = my-org
+        ↓
+account = my-work-account
+        ↓
+gh auth token --user my-work-account
+```
+
+Any owner that is not explicitly listed continues to use the original behavior:
+
+```text
+account = owner
+```
+
+so personal repositories do not require any additional configuration.
+
+## Override the Account for a Specific Repository
+
+Sometimes repositories under the same organization need to use different accounts.
+
+For example:
+
+```text
+https://github.com/my-org/foo.git
+https://github.com/my-org/special-repo.git
+```
+
+might normally use:
+
+```text
+my-work-account
+```
+
+but `special-repo` might need:
+
+```text
+special-account
+```
+
+The helper handles this by checking the full `owner/repo` combination before checking the owner:
+
+```sh
+case "$owner/$repo" in
+    my-org/special-repo) account='special-account' ;;
+    *)
+        case "$owner" in
+            my-org) account='my-work-account' ;;
+            another-org) account='another-account' ;;
+            *) account="$owner" ;;
+        esac
+        ;;
+esac
+```
+
+The precedence is therefore:
+
+```text
+repository-specific mapping
+        ↓
+organization/owner mapping
+        ↓
+owner name as the default account
+```
+
+For example:
+
+```text
+github.com/my-org/special-repo
+        ↓
+special-account
+
+github.com/my-org/other-repo
+        ↓
+my-work-account
+
+github.com/aont/foo
+        ↓
+aont
+```
+
+This makes it possible to handle personal repositories, organization-owned repositories, and repository-specific exceptions with the same credential helper.
 
 ## Reset Existing Credential Helpers with `helper =`
 
@@ -247,7 +412,7 @@ then, from the credential helper's perspective:
 path=aont/0123456789abcdef.git
 ```
 
-so, the command:
+so the command:
 
 ```bash
 gh auth token --user aont
@@ -255,16 +420,18 @@ gh auth token --user aont
 
 is automatically used.
 
-This allows you to treat GitHub repositories and Gists with the same rules.
+This allows GitHub repositories and Gists to follow a similar rule:
 
 ```text
-github.com/USER/REPO
+github.com/OWNER/REPO
 gist.github.com/USER/GIST
                 ↓
-             USER is extracted
+       account is determined
                 ↓
-gh auth token --user USER
+gh auth token --user ACCOUNT
 ```
+
+For normal personal repositories and Gists, the owner or user is used directly. For organization-owned repositories, explicit mappings can override that behavior.
 
 ## Verification
 
@@ -290,7 +457,41 @@ username=aont
 password=...
 ```
 
-If the `username` is a different account, you can check if another credential helper is still present using:
+You can also verify an organization mapping:
+
+```bash
+printf '%s\n' \
+  'protocol=https' \
+  'host=github.com' \
+  'path=my-org/foo.git' \
+  '' |
+git credential fill
+```
+
+With the configuration above, the expected username is:
+
+```text
+username=my-work-account
+```
+
+For the repository-specific override:
+
+```bash
+printf '%s\n' \
+  'protocol=https' \
+  'host=github.com' \
+  'path=my-org/special-repo.git' \
+  '' |
+git credential fill
+```
+
+the expected username is:
+
+```text
+username=special-account
+```
+
+If the `username` is unexpected, you can check whether another credential helper is still present using:
 
 ```bash
 git config --show-origin --get-all credential.helper
@@ -306,19 +507,25 @@ gh auth git-credential
 
 This is sufficient for normal single-account usage.
 
-However, when using multiple accounts with the same host (`github.com`), you might want to explicitly control which `gh` account is used based on the repository owner.
+However, when using multiple accounts with the same host (`github.com`), you might want to explicitly control which `gh` account is used based on the repository owner or repository itself.
 
-This helper uses a very simple rule:
+This helper uses the following routing rule:
 
 ```text
 remote URL
   ↓
-owner is extracted
+owner/repository is extracted
   ↓
-gh auth token --user owner
+repository-specific mapping, if any
+  ↓
+owner mapping, if any
+  ↓
+otherwise use owner as account
+  ↓
+gh auth token --user account
 ```
 
-so you don't need to be aware of which account is currently active in `gh`.
+As a result, you do not need to be aware of which account is currently active in `gh`.
 
 ## Advantages of This Configuration
 
@@ -330,7 +537,7 @@ The PAT is retrieved each time it is needed using:
 gh auth token --user ACCOUNT
 ```
 
-Therefore, the configuration only saves the rule for which account to use.
+Therefore, the configuration only saves the rule for determining which account to use.
 
 Additionally, you do not need to run:
 
@@ -346,17 +553,35 @@ git config credential.username ...
 
 for each repository.
 
-The remote URL itself becomes the credential routing information.
+The remote URL itself becomes the input for credential routing.
+
+For most personal repositories, no explicit configuration is necessary:
+
+```text
+github.com/aont/foo
+        ↓
+account = aont
+```
+
+Organization accounts can be mapped:
+
+```text
+github.com/my-org/foo
+        ↓
+account = my-work-account
+```
+
+and individual repositories can override that mapping:
+
+```text
+github.com/my-org/special-repo
+        ↓
+account = special-account
+```
 
 ## Summary
 
-When using multiple GitHub accounts over HTTPS, using the `account` portion of:
-
-```text
-github.com/<account>/<repo>
-```
-
-directly for selecting the `gh` account can simplify operations.
+When using multiple GitHub accounts over HTTPS, the repository path can be used to automatically select the appropriate `gh` account.
 
 The mechanism is:
 
@@ -367,25 +592,33 @@ credential.useHttpPath
   ↓
 path=owner/repo.git
   ↓
-owner is extracted
+owner and repo are extracted
   ↓
-gh auth token --user owner
+repository-specific mapping?
+  ├─ yes → use mapped account
+  └─ no
+       ↓
+     owner mapping?
+       ├─ yes → use mapped account
+       └─ no → use owner as account
+  ↓
+gh auth token --user account
   ↓
 username/password is returned to Git
 ```
 
-If you have multiple personal accounts and the relationship:
+The default rule remains simple:
 
 ```text
 repository owner = GitHub account
 ```
 
-holds true, this method is quite easy to use.
-
-For organization-owned repositories where:
+but explicit mappings make the same approach usable for organization-owned repositories where:
 
 ```text
-owner != account used for authentication
+repository owner != account used for authentication
 ```
 
-you will need separate mappings, but this configuration is sufficient for primarily personal accounts.
+Repository-specific overrides can also handle exceptions within the same organization.
+
+This keeps the credential-selection logic entirely inside `.gitconfig`, without storing PATs directly or requiring external scripts.
