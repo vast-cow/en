@@ -28,13 +28,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event_name == 'push' && github.sha || 'posts' }}
-          sparse-checkout: posts
-          path: .posts
+          sparse-checkout: |
+            posts/
+          path: content-source
 
       - name: Add posts to site
         run: |
           rm -rf src/content/posts
-          mv .posts/posts src/content/posts
+          mkdir -p src/content/posts
+          cp -a content-source/posts/. src/content/posts/
+          rm -rf content-source
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
