@@ -28,7 +28,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event_name == 'push' && github.sha || 'posts' }}
-          path: src/content/posts
+          sparse-checkout: posts
+          path: .posts
+
+      - name: Add posts to site
+        run: |
+          rm -rf src/content/posts
+          mv .posts/posts src/content/posts
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -51,7 +57,7 @@ jobs:
         run: |
           echo "ASTRO_AUTHOR=$(gh api "users/${{ github.repository_owner }}" --jq '.name // .login')" >> "$GITHUB_ENV"
           echo "ASTRO_PROFILE_URL=https://github.com/${{ github.repository_owner }}" >> "$GITHUB_ENV"
-          echo "ASTRO_EDIT_POST_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/tree/${GITHUB_REF}/" >> "$GITHUB_ENV"
+          echo "ASTRO_EDIT_POST_URL=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/tree/${GITHUB_REF}/posts/" >> "$GITHUB_ENV"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
