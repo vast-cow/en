@@ -1,6 +1,6 @@
 ---
 pubDatetime: 2026-09-27T21:58:00+09:00
-title: "Installing uv System-Wide on Rocky Linux"
+title: "Installing uv System-Wide on Linux"
 description: "Specify the installation directory for the official installer as `/usr/local/bin` to allow all users to run `uv` / `uvx`. Also, prevent the installer from modifying the user-specific PATH."
 ---
 
