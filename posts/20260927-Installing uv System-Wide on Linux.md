@@ -7,8 +7,7 @@ description: "Specify the installation directory for the official installer as `
 If you want to install `uv` **system-wide** on Linux and make `uv` / `uvx` available to all users, the simplest method is to install it in `/usr/local/bin`.
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh \
-  | sudo env UV_INSTALL_DIR=/usr/local/bin UV_NO_MODIFY_PATH=1 sh
+curl -LsSf https://astral.sh/uv/install.sh | UV_INSTALL_DIR=/usr/local/bin UV_NO_MODIFY_PATH=1 sudo -E sh
 ```
 
 Verification:
