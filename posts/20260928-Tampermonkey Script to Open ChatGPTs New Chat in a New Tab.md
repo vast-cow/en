@@ -35,7 +35,7 @@ Register the following script in Tampermonkey:
 // @name         Add New Chat Link
 // @namespace    tampermonkey
 // @version      1.0
-// @description  Duplicate the "New Chat" button and add a link
+// @description  「新しいチャット」ボタンを複製してリンクを追加
 // @match        https://chatgpt.com/*
 // @grant        none
 // ==/UserScript==
@@ -48,10 +48,11 @@ Register the following script in Tampermonkey:
     const ADDED_LINK_SELECTOR = 'a[data-tm-new-chat-link]';
 
     /**
-     * Searches for the "New Chat" span within the target root or its descendants.
+     * root 自身または子孫から
+     * 「新しいチャット」の span を探す
      */
     function findTargetSpan(targetRoot) {
-        // Check the root itself
+        // root 自身を確認
         if (
             targetRoot instanceof HTMLSpanElement &&
             targetRoot.innerText.trim() === TARGET_TEXT
@@ -59,7 +60,7 @@ Register the following script in Tampermonkey:
             return targetRoot;
         }
 
-        // Check the descendants
+        // 子孫を確認
         if (targetRoot.querySelectorAll) {
             for (const span of targetRoot.querySelectorAll('span')) {
                 if (span.innerText.trim() === TARGET_TEXT) {
@@ -87,7 +88,7 @@ Register the following script in Tampermonkey:
         let observer;
 
         function process(targetRoot) {
-            // Disconnect the observer while processing
+            // process 中は observer を停止
             observer?.disconnect();
 
             try {
@@ -97,61 +98,61 @@ Register the following script in Tampermonkey:
                     return;
                 }
 
-                // Get the ancestor button
+                // 祖先の button を取得
                 const button = span.closest('button');
 
                 if (!button) {
                     return;
                 }
 
-                // Get the button's parent
+                // button の parent を取得
                 const parent = button.parentElement;
 
                 if (!parent) {
                     return;
                 }
 
-                // If already added, do nothing
+                // すでに追加済みなら何もしない
                 if (parent.querySelector(ADDED_LINK_SELECTOR)) {
                     return;
                 }
 
-                // Clone the button
+                // button を複製
                 const buttonCloned = button.cloneNode(true);
 
-                // Change "New Chat" to "New Tab" in the cloned button
+                // 複製した button 内の
+                // 「新しいチャット」を「新規Window」に変更
                 const clonedSpan = findTargetSpan(buttonCloned);
 
                 if (clonedSpan) {
                     clonedSpan.innerText = CLONED_TEXT;
                 }
 
-                buttonCloned.firstChild.classList.replace(
-                    "text-emphasis",
-                    "text-default"
-                );
+                buttonCloned.classList.replace("bg-primary-ghost-hover", "hover:bg-primary-ghost-hover")
+                buttonCloned.classList.add("data-[state=open]:bg-primary-ghost-hover")
+                buttonCloned.firstChild.classList.replace("text-emphasis", "text-default")
 
-                // Create an <a> tag
+                // <a href="/"> を作成
                 const anchor = document.createElement('a');
 
                 anchor.href = '/';
-                anchor.target = '_blank';
+                anchor.target = "_blank";
                 anchor.dataset.tmNewChatLink = 'true';
 
                 anchor.appendChild(buttonCloned);
 
-                // Add to the parent of the original button
+                // 元 button の parent に追加
                 parent.prepend(anchor);
 
                 console.log('[Tampermonkey] link added:', anchor);
             } finally {
-                // Re-enable the observer after processing
+                // process 完了後に監視を再開
                 observer?.observe(root, observerOptions);
             }
         }
 
         observer = new MutationObserver((mutations) => {
-            // Stop the callback at the start
+            // callback 開始時点で止める
             observer.disconnect();
 
             try {
@@ -169,10 +170,10 @@ Register the following script in Tampermonkey:
             }
         });
 
-        // Initial execution
+        // 初回実行
         process(root);
 
-        // Observe for additions to the child elements under #root
+        // #root 以下への子孫要素追加を監視
         observer.observe(root, observerOptions);
     }
 
