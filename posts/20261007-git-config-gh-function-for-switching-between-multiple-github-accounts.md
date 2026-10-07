@@ -1,5 +1,5 @@
 ---
-title: `git-config-gh` Function for Managing Multiple GitHub Accounts
+title: "`git-config-gh` Function for Managing Multiple GitHub Accounts"
 description: "This Bash function leverages `gh` (GitHub CLI) to switch between GitHub accounts and retrieve user information from the GitHub API. It then automatically configures the current repository with a \"noreply\" email address."
 pubDatetime: 2026-10-07T12:53:00+09:00
 ---
@@ -33,7 +33,7 @@ git-config-gh() (
   original="$(gh api user --jq '.login')" || return 1
 
   # Restore the original account regardless of success or failure
-  trap 'gh auth switch --hostname github.com --user "$original" >/dev/null 2>&1 || true' EXIT
+  trap 'gh auth switch --hostname github.com --user "$original" || true' EXIT
 
   gh auth switch --hostname github.com --user "$username" || return 1
 
