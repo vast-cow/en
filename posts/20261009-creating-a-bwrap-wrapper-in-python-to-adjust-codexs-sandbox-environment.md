@@ -77,7 +77,7 @@ def main() -> None:
     while i < len(original_args):
         arg = original_args[i]
 
-        # --dev /dev を変換
+        # Convert --dev /dev
         if (
             arg == "--dev"
             and i + 1 < len(original_args)
@@ -87,15 +87,15 @@ def main() -> None:
             i += 2
             continue
 
-        # --bind の変換
+        # Convert --bind
         if arg == "--bind" and i + 2 < len(original_args):
             src = original_args[i + 1]
             dst = original_args[i + 2]
 
-            # SRCとDSTが両方PWDと完全一致する場合
+            # If both SRC and DST are exactly the same as PWD
             if src == pwd_path and dst == pwd_path:
 
-                # 最初の該当箇所にだけtmpfsを挿入
+                # Insert tmpfs only in the first occurrence
                 if not tmpfs_inserted:
                     args.extend([
                         "--tmpfs", home,
@@ -103,10 +103,6 @@ def main() -> None:
                         "--ro-bind",
                         f"{home}/.codex/packages",
                         f"{home}/.codex/packages",
-                        "--dir", f"{home}/.local/bin",
-                        "--symlink",
-                        f"{home}/.codex/packages/standalone/current/bin/codex",
-                        f"{home}/.local/bin/codex",
                     ])
                     tmpfs_inserted = True
 
@@ -117,7 +113,7 @@ def main() -> None:
         args.append(arg)
         i += 1
 
-    # ログ記録
+    # Log
     with open(log_file, "a", encoding="utf-8") as log:
         log.write("\n========== BWRAP START ==========\n")
         log.write(f"Timestamp: {timestamp}\n")
@@ -134,7 +130,7 @@ def main() -> None:
 
         log.write("=========== BWRAP END ===========\n")
 
-    # Bashのexecと同等（プロセスを置換）
+    # Equivalent to Bash's exec (replaces the process)
     os.execv(real_bwrap, [real_bwrap, *args])
 
 
