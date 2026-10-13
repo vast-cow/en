@@ -129,7 +129,7 @@ For example:
 
 ```bash
 socat \
-  TCP4-LISTEN:8082,bind=127.0.0.1,reuseaddr,fork \
+  UNIX-LISTEN:./app.sock,fork,unlink-early,mode=0600 \
   OPENSSL:x.x.x.x:443,verify=0
 ```
 
@@ -139,7 +139,7 @@ Then configure Tailscale Serve:
 tailscale serve \
   --service=svc:x11dpi-ipmi \
   --tls-terminated-tcp=443 \
-  tcp://127.0.0.1:8082
+  "unix:${PWD}/app.sock"
 ```
 
 With this configuration, everything worked correctly:
@@ -156,12 +156,15 @@ Because no HTTP headers are parsed, ATEN's non-standard HTTP implementation is p
 Nginx can achieve the same result by using the `stream` module instead of the HTTP module.
 
 ```nginx
+load_module /usr/lib/nginx/modules/ngx_stream_module.so;
+
 stream {
     server {
-        listen 127.0.0.1:8082;
+        listen unix:./app.sock;
 
         proxy_ssl on;
         proxy_ssl_verify off;
+        proxy_ssl_server_name off;
 
         proxy_pass x.x.x.x:443;
     }
