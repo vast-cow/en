@@ -158,15 +158,30 @@ Nginx can achieve the same result by using the `stream` module instead of the HT
 ```nginx
 load_module /usr/lib/nginx/modules/ngx_stream_module.so;
 
+error_log ./logs/error.log warn;
+error_log /dev/stderr warn;
+pid ./nginx.pid;
+
+events {}
+
 stream {
+    log_format main '$remote_addr [$time_local] '
+                    '$protocol $status '
+                    '$bytes_sent $bytes_received '
+                    '$session_time';
+
+    access_log ./logs/access.log;
+    access_log /dev/stderr main;
+
     server {
         listen unix:./app.sock;
 
-        proxy_ssl on;
-        proxy_ssl_verify off;
-        proxy_ssl_server_name off;
+        proxy_connect_timeout 10s;
+        proxy_timeout 24h;
 
         proxy_pass x.x.x.x:443;
+
+        proxy_ssl on;
     }
 }
 ```
