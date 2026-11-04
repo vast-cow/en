@@ -9,7 +9,7 @@ When using multiple GitHub accounts, the process of selecting the correct Person
 Specifically, when dealing with repositories from multiple owners, such as:
 
 ```text
-https://github.com/aont/foo.git
+https://github.com/vast-cow/foo.git
 https://github.com/another-user/bar.git
 ```
 
@@ -48,13 +48,13 @@ gh auth status
 With the basic method, if a repository URL is:
 
 ```text
-https://github.com/aont/foo.git
+https://github.com/vast-cow/foo.git
 ```
 
 the command:
 
 ```bash
-gh auth token --user aont
+gh auth token --user vast-cow
 ```
 
 will be executed.
@@ -129,7 +129,7 @@ host=github.com
 However, in this case, we need the path:
 
 ```text
-aont/foo.git
+vast-cow/foo.git
 ```
 
 Therefore, set:
@@ -144,7 +144,7 @@ This causes the path to be passed to the credential helper's standard input, suc
 ```text
 protocol=https
 host=github.com
-path=aont/foo.git
+path=vast-cow/foo.git
 ```
 
 ## Use the Beginning of the Path as the Default Account
@@ -174,13 +174,13 @@ repo=${repo%.git}
 For example, if:
 
 ```text
-path=aont/foo.git
+path=vast-cow/foo.git
 ```
 
 then:
 
 ```text
-owner=aont
+owner=vast-cow
 repo=foo
 ```
 
@@ -199,13 +199,13 @@ token=$(gh auth token --user "$account")
 Therefore, when accessing:
 
 ```text
-https://github.com/aont/foo.git
+https://github.com/vast-cow/foo.git
 ```
 
 the command:
 
 ```bash
-gh auth token --user aont
+gh auth token --user vast-cow
 ```
 
 is automatically executed.
@@ -346,9 +346,9 @@ github.com/my-org/other-repo
         ↓
 my-work-account
 
-github.com/aont/foo
+github.com/vast-cow/foo
         ↓
-aont
+vast-cow
 ```
 
 This makes it possible to handle personal repositories, organization-owned repositories, and repository-specific exceptions with the same credential helper.
@@ -403,19 +403,19 @@ https://gist.github.com/USER/GIST_ID.git
 For example, if:
 
 ```text
-https://gist.github.com/aont/0123456789abcdef.git
+https://gist.github.com/vast-cow/0123456789abcdef.git
 ```
 
 then, from the credential helper's perspective:
 
 ```text
-path=aont/0123456789abcdef.git
+path=vast-cow/0123456789abcdef.git
 ```
 
 so the command:
 
 ```bash
-gh auth token --user aont
+gh auth token --user vast-cow
 ```
 
 is automatically used.
@@ -443,7 +443,7 @@ For example, run:
 printf '%s\n' \
   'protocol=https' \
   'host=github.com' \
-  'path=aont/foo.git' \
+  'path=vast-cow/foo.git' \
   '' |
 git credential fill
 ```
@@ -453,7 +453,7 @@ The expected output is:
 ```text
 protocol=https
 host=github.com
-username=aont
+username=vast-cow
 password=...
 ```
 
@@ -558,9 +558,9 @@ The remote URL itself becomes the input for credential routing.
 For most personal repositories, no explicit configuration is necessary:
 
 ```text
-github.com/aont/foo
+github.com/vast-cow/foo
         ↓
-account = aont
+account = vast-cow
 ```
 
 Organization accounts can be mapped:
