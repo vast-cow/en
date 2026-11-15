@@ -1,6 +1,6 @@
 ---
 title: "A JavaScript Overlay for File Upload and Transcription"
-description: "Upload a selected file to ChatGPT's transcription endpoint through a browser overlay that uses the current session token, detects audio duration, and displays text or API errors."
+description: "Upload a selected file to transcription endpoint through a browser overlay that uses the current session token, detects audio duration, and displays text or API errors."
 pubDatetime: 2026-02-15T14:48:58.003Z
 updatedDate: 2026-02-15T15:03:06.357Z
 ---
@@ -24,7 +24,7 @@ Error handling is implemented at each critical step, including token parsing, up
   "use strict"; 
  
   // ---- Config ---- 
-  const UPLOAD_PATH = "https://chatgpt.com/backend-api/transcribe"; 
+  const UPLOAD_PATH = location.origin + "/backend-api/transcribe"; 
   const ACCEPT = "*/*"; // Accept any file type 
  
   // ---- Helpers ---- 
