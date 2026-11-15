@@ -4,18 +4,6 @@ description: "It uses Rootless Docker to run CouchDB and Tailscale Serve for HTT
 pubDatetime: 2026-11-15T20:50:00+09:00
 ---
 
-## Obsidian Self-Hosting with Rootless Docker, CouchDB, and Tailscale
-
-### Description
-
-A self-hosted LiveSync configuration using CouchDB as the synchronization server.
-
-### Publication Date
-
-2026-11-15T20:50:00+09:00
-
----
-
 This guide outlines how to set up an environment for synchronizing notes between your iPhone and PC without using Obsidian's official synchronization service, "Obsidian Sync."
 
 We will use CouchDB as the synchronization server and connect it to Obsidian using the Self-hosted LiveSync plugin.
