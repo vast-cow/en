@@ -30,10 +30,15 @@ in this state, it will increment the patch version of the latest `v1.2.10` and c
 
 ## Registering the Git alias
 
-Run the following command only once.
+Please add following to `.gitconfig`:
 
-```bash
-git config --global alias.tag-bump '!f() { git tag "$(git tag -l "v*.*.*" --sort=-version:refname | awk -F. '"'"'/^v[0-9]+\.[0-9]+\.[0-9]+$/ {print $1 "." $2 "." ($3+1); exit}'"'"')"; }; f'
+```toml
+[alias]
+    tag-bump = "!f() { \
+        tag=$(git tag -l \"v*.*.*\" --sort=-version:refname | \
+            awk -F. '/^v[0-9]+\\.[0-9]+\\.[0-9]+$/ {print $1 \".\" $2 \".\" ($3+1); exit}'); \
+        git tag \"${tag:-v0.0.1}\"; \
+    }; f"
 ```
 
 The setup is now complete.
