@@ -42,7 +42,7 @@ In this local verification, call it with the same value as `LITELLM_MASTER_KEY` 
 curl -sS http://127.0.0.1:4000/v1/responses \
   -H "Authorization: Bearer $LITELLM_API_KEY" \
   -H 'Content-Type: application/json' \
-  --data '{"model":"local-chat","input":"日本語で短く挨拶してください。"}'
+  --data '{"model":"local-chat","input":"Please give a short greeting in English."}'
 ```
 
 If the `output` in the response contains text and `POST /v1/chat/completions` is logged by the backend, the conversion is working.
