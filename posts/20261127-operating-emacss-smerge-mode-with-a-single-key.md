@@ -1,17 +1,17 @@
 ---
-title: "Operate Emacs’s smerge-mode with a single key"
-description: "An Emacs configuration that assigns conflict resolution operations to a single key and displays help in the mode line."
+title: "Operate Emacs smerge-mode with a single key"
+description: "Emacs configuration that assigns conflict resolution operations to a single key and displays help in the mode line."
 pubDatetime: 2026-11-27T17:58:00+09:00
 ---
-Emacs comes with `smerge-mode` built in as a standard feature for resolving Git conflicts.
+Emacs comes standard with `smerge-mode` for resolving Git conflicts.
 
-Since the operations for resolving conflicts are somewhat limited, I configured it so that it can be operated with single keys without using modifier keys.
+Since the operations during conflict resolution are somewhat limited, I've made it possible to operate with single keys without using modifier keys.
 
 ## Settings
 
 ```elisp
 (with-eval-after-load 'smerge-mode
-  ;; Automatically exit after conflict resolution
+  ;; Automatically exit after resolving conflicts
   (setq smerge-auto-leave t)
 
   ;; Display of conflict markers
@@ -38,7 +38,7 @@ Since the operations for resolving conflicts are somewhat limited, I configured 
         '(" SMerge [n]Next [p]Prev [u]Upper [l]Lower [a]All [q]Quit")))
 ```
 
-## Key Bindings
+## Key bindings
 
 | Key | Operation |
 |---|---|
@@ -49,20 +49,26 @@ Since the operations for resolving conflicts are somewhat limited, I configured 
 | `a` | Keep both changes |
 | `q` | Exit smerge-mode |
 
-Since the key bindings are defined in `smerge-mode-map`, they are only applied while the mode is active.
+Since the key bindings are defined in `smerge-mode-map`, they apply only while the mode is active.
 
-Also, by changing `minor-mode-alist`, I made the key binding help display in the mode line.
+Additionally, I modified `minor-mode-alist` to display key binding help in the mode line.
 
 ```
 SMerge [n]Next [p]Prev [u]Upper [l]Lower [a]All [q]Quit
 ```
 
-For conflict markers as well, I only made them bold to fit in with the existing theme.
+## Adjusting conflict marker display
 
-## Automatic Exit After Conflict Resolution
+In my environment, when using a light theme, the conflict markers displayed black text on a black background, which was hard to read.
+
+Therefore, I removed the foreground and background color specifications for `smerge-markers` and made it inherit the `default` face. The colors are left to the theme, and the conflict markers are emphasized by making them bold.
+
+This makes the display usable with both light and dark themes.
+
+## Automatic exit after resolving conflicts
 
 Since `smerge-auto-leave` is enabled, when the last conflict is resolved with an smerge command, the mode exits automatically.
 
-The key bindings and help display are also automatically cleared, returning to the normal editing state. If you need to type text midway through, you can also exit with `q`.
+The key bindings and help display are also automatically removed, returning to normal editing state. If you need to type text midway, you can also exit with `q`.
 
 By simply utilizing Emacs's minor mode mechanism, I was able to create an operation environment specialized for conflict resolution without depending on additional packages.
